@@ -16,17 +16,15 @@
 		ED049F39297FE9460080A88D /* RudderOneTrustiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = ED049F38297FE9460080A88D /* RudderOneTrustiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ED049F45297FE95B0080A88D /* RudderOneTrusttvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = ED049F44297FE95B0080A88D /* RudderOneTrusttvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ED049F74298013FE0080A88D /* iOSSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED049F6B298013FE0080A88D /* iOSSDK.swift */; };
-		ED049F75298013FE0080A88D /* OneTrustCookieCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED049F6D298013FE0080A88D /* OneTrustCookieCategory.swift */; };
 		ED049F76298013FE0080A88D /* OneTrustInterceptorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED049F6E298013FE0080A88D /* OneTrustInterceptorModel.swift */; };
 		ED049F77298013FE0080A88D /* OneTrustInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED049F6F298013FE0080A88D /* OneTrustInterceptor.swift */; };
 		ED049F78298013FE0080A88D /* OneTrustCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED049F70298013FE0080A88D /* OneTrustCategory.swift */; };
 		ED049F7B298014120080A88D /* tvOSSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED049F73298013FE0080A88D /* tvOSSDK.swift */; };
 		ED049F7C298014260080A88D /* OneTrustInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED049F6F298013FE0080A88D /* OneTrustInterceptor.swift */; };
-		ED049F7D298014260080A88D /* OneTrustCookieCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED049F6D298013FE0080A88D /* OneTrustCookieCategory.swift */; };
 		ED049F7F298014260080A88D /* OneTrustInterceptorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED049F6E298013FE0080A88D /* OneTrustInterceptorModel.swift */; };
 		ED049F80298014260080A88D /* OneTrustCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED049F70298013FE0080A88D /* OneTrustCategory.swift */; };
 		ED04A1B1298015AC0080A88D /* RudderOneTrustiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED049F36297FE9460080A88D /* RudderOneTrustiOS.framework */; };
-		ED04A1B7298015C00080A88D /* OneTrustTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED04A1A4298014EA0080A88D /* OneTrustTests.swift */; };
+		ED04A1B7298015C00080A88D /* OneTrustInterceptorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED04A1A4298014EA0080A88D /* OneTrustInterceptorTests.swift */; };
 		ED04A1C1298015CC0080A88D /* RudderOneTrusttvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED049F42297FE95B0080A88D /* RudderOneTrusttvOS.framework */; };
 		ED04A1D2298022720080A88D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED04A1D1298022720080A88D /* AppDelegate.swift */; };
 		ED04A1D4298022720080A88D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED04A1D3298022720080A88D /* SceneDelegate.swift */; };
@@ -39,12 +37,29 @@
 		ED04A1EF298022B50080A88D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED04A1ED298022B50080A88D /* Main.storyboard */; };
 		ED04A1F1298022B60080A88D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED04A1F0298022B60080A88D /* Assets.xcassets */; };
 		ED04A1F4298022B60080A88D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED04A1F2298022B60080A88D /* LaunchScreen.storyboard */; };
-		ED04A1FA298028360080A88D /* ServerConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = ED04A1F9298028360080A88D /* ServerConfig.json */; };
-		ED04A1FB298028360080A88D /* ServerConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = ED04A1F9298028360080A88D /* ServerConfig.json */; };
 		ED04A1FC29802B5A0080A88D /* TestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED049F71298013FE0080A88D /* TestUtils.swift */; };
 		ED04A1FD29802B5A0080A88D /* TestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED049F71298013FE0080A88D /* TestUtils.swift */; };
 		ED04A200298131D30080A88D /* TestSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED04A1FF298131D30080A88D /* TestSDK.swift */; };
 		ED04A201298131D30080A88D /* TestSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED04A1FF298131D30080A88D /* TestSDK.swift */; };
+		ED04A20429817B470080A88D /* OneTrustInterceptorModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED04A20329817B470080A88D /* OneTrustInterceptorModelTests.swift */; };
+		ED04A20B298180EC0080A88D /* DestinationConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED04A208298180E60080A88D /* DestinationConfig.swift */; };
+		ED04A20C298180ED0080A88D /* DestinationConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED04A208298180E60080A88D /* DestinationConfig.swift */; };
+		ED04A20D298182B70080A88D /* OneTrustCookieCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED04A20529817FE80080A88D /* OneTrustCookieCategory.swift */; };
+		ED04A20E298182B80080A88D /* OneTrustCookieCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED04A20529817FE80080A88D /* OneTrustCookieCategory.swift */; };
+		ED04A210298185A70080A88D /* TestCookieCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED04A20F298185A70080A88D /* TestCookieCategory.swift */; };
+		ED04A211298185A70080A88D /* TestCookieCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED04A20F298185A70080A88D /* TestCookieCategory.swift */; };
+		ED04A2202981AD8C0080A88D /* test-multi-destination-no-category.json in Resources */ = {isa = PBXBuildFile; fileRef = ED04A2182981AD8C0080A88D /* test-multi-destination-no-category.json */; };
+		ED04A2212981AD8C0080A88D /* test-multi-destination-no-category.json in Resources */ = {isa = PBXBuildFile; fileRef = ED04A2182981AD8C0080A88D /* test-multi-destination-no-category.json */; };
+		ED04A2222981AD8C0080A88D /* test-one-destination-one-category.json in Resources */ = {isa = PBXBuildFile; fileRef = ED04A2192981AD8C0080A88D /* test-one-destination-one-category.json */; };
+		ED04A2232981AD8C0080A88D /* test-one-destination-one-category.json in Resources */ = {isa = PBXBuildFile; fileRef = ED04A2192981AD8C0080A88D /* test-one-destination-one-category.json */; };
+		ED04A2242981AD8C0080A88D /* test-one-destination-multi-category.json in Resources */ = {isa = PBXBuildFile; fileRef = ED04A21A2981AD8C0080A88D /* test-one-destination-multi-category.json */; };
+		ED04A2252981AD8C0080A88D /* test-one-destination-multi-category.json in Resources */ = {isa = PBXBuildFile; fileRef = ED04A21A2981AD8C0080A88D /* test-one-destination-multi-category.json */; };
+		ED04A2262981AD8C0080A88D /* test-one-destination-no-category.json in Resources */ = {isa = PBXBuildFile; fileRef = ED04A21B2981AD8C0080A88D /* test-one-destination-no-category.json */; };
+		ED04A2272981AD8C0080A88D /* test-one-destination-no-category.json in Resources */ = {isa = PBXBuildFile; fileRef = ED04A21B2981AD8C0080A88D /* test-one-destination-no-category.json */; };
+		ED04A2282981AD8C0080A88D /* test-mix-destination-mix-category.json in Resources */ = {isa = PBXBuildFile; fileRef = ED04A21C2981AD8C0080A88D /* test-mix-destination-mix-category.json */; };
+		ED04A2292981AD8C0080A88D /* test-mix-destination-mix-category.json in Resources */ = {isa = PBXBuildFile; fileRef = ED04A21C2981AD8C0080A88D /* test-mix-destination-mix-category.json */; };
+		ED04A22C2981B3C60080A88D /* OneTrustInterceptorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED04A1A4298014EA0080A88D /* OneTrustInterceptorTests.swift */; };
+		ED04A22D2981B3C60080A88D /* OneTrustInterceptorModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED04A20329817B470080A88D /* OneTrustInterceptorModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,13 +98,12 @@
 		ED049F42297FE95B0080A88D /* RudderOneTrusttvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RudderOneTrusttvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED049F44297FE95B0080A88D /* RudderOneTrusttvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RudderOneTrusttvOS.h; sourceTree = "<group>"; };
 		ED049F6B298013FE0080A88D /* iOSSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOSSDK.swift; sourceTree = "<group>"; };
-		ED049F6D298013FE0080A88D /* OneTrustCookieCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneTrustCookieCategory.swift; sourceTree = "<group>"; };
 		ED049F6E298013FE0080A88D /* OneTrustInterceptorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneTrustInterceptorModel.swift; sourceTree = "<group>"; };
 		ED049F6F298013FE0080A88D /* OneTrustInterceptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneTrustInterceptor.swift; sourceTree = "<group>"; };
 		ED049F70298013FE0080A88D /* OneTrustCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneTrustCategory.swift; sourceTree = "<group>"; };
 		ED049F71298013FE0080A88D /* TestUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestUtils.swift; sourceTree = "<group>"; };
 		ED049F73298013FE0080A88D /* tvOSSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tvOSSDK.swift; sourceTree = "<group>"; };
-		ED04A1A4298014EA0080A88D /* OneTrustTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneTrustTests.swift; sourceTree = "<group>"; };
+		ED04A1A4298014EA0080A88D /* OneTrustInterceptorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneTrustInterceptorTests.swift; sourceTree = "<group>"; };
 		ED04A1AD298015AC0080A88D /* RudderOneTrustiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RudderOneTrustiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED04A1BD298015CC0080A88D /* RudderOneTrusttvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RudderOneTrusttvOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED04A1C9298016840080A88D /* RudderOneTrust.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = RudderOneTrust.podspec; path = ../RudderOneTrust.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -109,8 +123,16 @@
 		ED04A1F0298022B60080A88D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED04A1F3298022B60080A88D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED04A1F8298027BB0080A88D /* package.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = package.json; path = ../package.json; sourceTree = "<group>"; };
-		ED04A1F9298028360080A88D /* ServerConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ServerConfig.json; sourceTree = "<group>"; };
 		ED04A1FF298131D30080A88D /* TestSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSDK.swift; sourceTree = "<group>"; };
+		ED04A20329817B470080A88D /* OneTrustInterceptorModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTrustInterceptorModelTests.swift; sourceTree = "<group>"; };
+		ED04A20529817FE80080A88D /* OneTrustCookieCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTrustCookieCategory.swift; sourceTree = "<group>"; };
+		ED04A208298180E60080A88D /* DestinationConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationConfig.swift; sourceTree = "<group>"; };
+		ED04A20F298185A70080A88D /* TestCookieCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCookieCategory.swift; sourceTree = "<group>"; };
+		ED04A2182981AD8C0080A88D /* test-multi-destination-no-category.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "test-multi-destination-no-category.json"; sourceTree = "<group>"; };
+		ED04A2192981AD8C0080A88D /* test-one-destination-one-category.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "test-one-destination-one-category.json"; sourceTree = "<group>"; };
+		ED04A21A2981AD8C0080A88D /* test-one-destination-multi-category.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "test-one-destination-multi-category.json"; sourceTree = "<group>"; };
+		ED04A21B2981AD8C0080A88D /* test-one-destination-no-category.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "test-one-destination-no-category.json"; sourceTree = "<group>"; };
+		ED04A21C2981AD8C0080A88D /* test-mix-destination-mix-category.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "test-mix-destination-mix-category.json"; sourceTree = "<group>"; };
 		EFEF0592BE11CAF46EE63BB7 /* Pods_RudderOneTrusttvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RudderOneTrusttvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1688B1D22648AF46A97DE52 /* Pods_SampleSwiftiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleSwiftiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6FAF017F463077BE83C1787 /* Pods-RudderOneTrusttvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RudderOneTrusttvOS.release.xcconfig"; path = "Target Support Files/Pods-RudderOneTrusttvOS/Pods-RudderOneTrusttvOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -290,8 +312,10 @@
 		ED04A1A2298014EA0080A88D /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				ED04A1A4298014EA0080A88D /* OneTrustTests.swift */,
-				ED04A1F9298028360080A88D /* ServerConfig.json */,
+				ED04A2022981744D0080A88D /* Fixtures */,
+				ED04A20329817B470080A88D /* OneTrustInterceptorModelTests.swift */,
+				ED04A1A4298014EA0080A88D /* OneTrustInterceptorTests.swift */,
+				ED04A20F298185A70080A88D /* TestCookieCategory.swift */,
 				ED04A1FF298131D30080A88D /* TestSDK.swift */,
 				ED049F71298013FE0080A88D /* TestUtils.swift */,
 			);
@@ -327,10 +351,23 @@
 		ED04A1FE298062CB0080A88D /* Domains */ = {
 			isa = PBXGroup;
 			children = (
-				ED049F6D298013FE0080A88D /* OneTrustCookieCategory.swift */,
+				ED04A208298180E60080A88D /* DestinationConfig.swift */,
 				ED049F70298013FE0080A88D /* OneTrustCategory.swift */,
+				ED04A20529817FE80080A88D /* OneTrustCookieCategory.swift */,
 			);
 			path = Domains;
+			sourceTree = "<group>";
+		};
+		ED04A2022981744D0080A88D /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				ED04A21C2981AD8C0080A88D /* test-mix-destination-mix-category.json */,
+				ED04A2182981AD8C0080A88D /* test-multi-destination-no-category.json */,
+				ED04A21A2981AD8C0080A88D /* test-one-destination-multi-category.json */,
+				ED04A21B2981AD8C0080A88D /* test-one-destination-no-category.json */,
+				ED04A2192981AD8C0080A88D /* test-one-destination-one-category.json */,
+			);
+			path = Fixtures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -543,7 +580,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED04A1FA298028360080A88D /* ServerConfig.json in Resources */,
+				ED04A2282981AD8C0080A88D /* test-mix-destination-mix-category.json in Resources */,
+				ED04A2262981AD8C0080A88D /* test-one-destination-no-category.json in Resources */,
+				ED04A2242981AD8C0080A88D /* test-one-destination-multi-category.json in Resources */,
+				ED04A2202981AD8C0080A88D /* test-multi-destination-no-category.json in Resources */,
+				ED04A2222981AD8C0080A88D /* test-one-destination-one-category.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,7 +592,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED04A1FB298028360080A88D /* ServerConfig.json in Resources */,
+				ED04A2292981AD8C0080A88D /* test-mix-destination-mix-category.json in Resources */,
+				ED04A2272981AD8C0080A88D /* test-one-destination-no-category.json in Resources */,
+				ED04A2252981AD8C0080A88D /* test-one-destination-multi-category.json in Resources */,
+				ED04A2212981AD8C0080A88D /* test-multi-destination-no-category.json in Resources */,
+				ED04A2232981AD8C0080A88D /* test-one-destination-one-category.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -786,8 +831,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED049F76298013FE0080A88D /* OneTrustInterceptorModel.swift in Sources */,
+				ED04A20B298180EC0080A88D /* DestinationConfig.swift in Sources */,
 				ED049F74298013FE0080A88D /* iOSSDK.swift in Sources */,
-				ED049F75298013FE0080A88D /* OneTrustCookieCategory.swift in Sources */,
+				ED04A20D298182B70080A88D /* OneTrustCookieCategory.swift in Sources */,
 				ED049F77298013FE0080A88D /* OneTrustInterceptor.swift in Sources */,
 				ED049F78298013FE0080A88D /* OneTrustCategory.swift in Sources */,
 			);
@@ -797,9 +843,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED049F7D298014260080A88D /* OneTrustCookieCategory.swift in Sources */,
 				ED049F7B298014120080A88D /* tvOSSDK.swift in Sources */,
+				ED04A20C298180ED0080A88D /* DestinationConfig.swift in Sources */,
 				ED049F7C298014260080A88D /* OneTrustInterceptor.swift in Sources */,
+				ED04A20E298182B80080A88D /* OneTrustCookieCategory.swift in Sources */,
 				ED049F7F298014260080A88D /* OneTrustInterceptorModel.swift in Sources */,
 				ED049F80298014260080A88D /* OneTrustCategory.swift in Sources */,
 			);
@@ -809,7 +856,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED04A1B7298015C00080A88D /* OneTrustTests.swift in Sources */,
+				ED04A1B7298015C00080A88D /* OneTrustInterceptorTests.swift in Sources */,
+				ED04A20429817B470080A88D /* OneTrustInterceptorModelTests.swift in Sources */,
+				ED04A210298185A70080A88D /* TestCookieCategory.swift in Sources */,
 				ED04A200298131D30080A88D /* TestSDK.swift in Sources */,
 				ED04A1FC29802B5A0080A88D /* TestUtils.swift in Sources */,
 			);
@@ -820,7 +869,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED04A201298131D30080A88D /* TestSDK.swift in Sources */,
+				ED04A211298185A70080A88D /* TestCookieCategory.swift in Sources */,
+				ED04A22D2981B3C60080A88D /* OneTrustInterceptorModelTests.swift in Sources */,
 				ED04A1FD29802B5A0080A88D /* TestUtils.swift in Sources */,
+				ED04A22C2981B3C60080A88D /* OneTrustInterceptorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

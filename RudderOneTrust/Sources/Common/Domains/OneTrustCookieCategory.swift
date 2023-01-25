@@ -1,35 +1,38 @@
 //
 //  OneTrustCookieCategory.swift
-//  OneTrust
+//  RudderOneTrust
 //
-//  Created by Pallab Maiti on 20/01/23.
+//  Created by Pallab Maiti on 25/01/23.
 //
 
-
+import Foundation
 import Rudder
 
-class DestinationConfig: Codable {
-    class OneTrustCookieCategory: Codable {
-        private let _oneTrustCookieCategory: String?
-        var oneTrustCookieCategory: String {
-            return _oneTrustCookieCategory ?? ""
-        }
-        
-        enum CodingKeys: String, CodingKey {
-            case _oneTrustCookieCategory = "oneTrustCookieCategory"
-        }
+protocol CookieCategory {
+    var destination: RSServerDestination! { get set }
+    func getRudderOneTrustCookieCategories() -> [String]?
+}
+
+class OneTrustCookieCategory: CookieCategory {
+    var destination: RSServerDestination!
+    
+    init(destination: RSServerDestination) {
+        self.destination = destination
     }
     
-    private let _oneTrustCookieCategories: [OneTrustCookieCategory]?
-    var oneTrustCookieCategories: [String]? {
-        return _oneTrustCookieCategories?.filter({ oneTrustCookieCategory in
-            return !oneTrustCookieCategory.oneTrustCookieCategory.isEmpty
-        }).compactMap({ oneTrustCookieCategory in
-            return oneTrustCookieCategory.oneTrustCookieCategory
-        })
+    func getRudderOneTrustCookieCategories() -> [String]? {
+        guard let destinationConfig = getDestinationConfig(), let oneTrustCookieCategories = destinationConfig.oneTrustCookieCategories, !oneTrustCookieCategories.isEmpty else {
+            return nil
+        }
+        return oneTrustCookieCategories
     }
     
-    enum CodingKeys: String, CodingKey {
-        case _oneTrustCookieCategories = "oneTrustCookieCategories"
+    func getDestinationConfig() -> DestinationConfig? {
+        if let config: [String: Any] = destination?.destinationConfig as? [String: Any] {
+            if let jsonData = try? JSONSerialization.data(withJSONObject: config) {
+                return try? JSONDecoder().decode(DestinationConfig.self, from: jsonData)
+            }
+        }
+        return nil
     }
 }

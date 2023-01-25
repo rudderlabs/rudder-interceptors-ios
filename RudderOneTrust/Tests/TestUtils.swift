@@ -1,6 +1,5 @@
 //
 //  TestUtils.swift
-//  OneTrust-iOS
 //
 //  Created by Pallab Maiti on 24/01/23.
 //
@@ -10,8 +9,17 @@ import Rudder
 
 internal final class TestUtils {
         
-    static var rudderConfig: RSConfig {
+    var rudderConfig: RSConfig {
         RSConfigBuilder().build()
+    }
+    
+    var serverConfigManager: RSServerConfigManager {
+        RSServerConfigManager("WRITE_KEY", rudderConfig: rudderConfig)
+    }
+    
+    func getServerConfig(forResource: String, ofType: String) -> RSServerConfigSource {
+        let jsonString = getJSONString(forResource: forResource, ofType: ofType)
+        return serverConfigManager._parseConfig(jsonString)
     }
     
     func getPath(forResource: String, ofType: String) -> String {

@@ -8,7 +8,7 @@
 import UIKit
 import OTPublishersHeadlessSDKtvOS
 import Rudder
-import RudderOneTrusttvOS
+import RudderOneTrust
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {

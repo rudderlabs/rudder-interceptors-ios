@@ -9,8 +9,13 @@ import Foundation
 import OTPublishersHeadlessSDK
 
 class iOSSDK: OneTrustSDK {    
-    func getDomainGroupData() -> [String: Any]? {
-        return OTPublishersHeadlessSDK.shared.getDomainGroupData()
+    func fetchCategoryList() -> [OneTrustCategory]? {
+        if let domainData = OTPublishersHeadlessSDK.shared.getDomainGroupData(),
+           let jsonData = try? JSONSerialization.data(withJSONObject: domainData),
+           let result = try? JSONDecoder().decode(OneTrustDomainGroupData.self, from: jsonData) {
+            return result.groups
+        }
+        return nil
     }
     
     func getConsentStatus(forCategoryId: String) -> Bool {

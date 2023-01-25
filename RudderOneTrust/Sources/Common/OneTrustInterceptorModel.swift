@@ -9,7 +9,7 @@ import Foundation
 import Rudder
 
 protocol OneTrustSDK {
-    func getDomainGroupData() -> [String: Any]?
+    func fetchCategoryList() -> [OneTrustCategory]?
     
     func getConsentStatus(forCategoryId: String) -> Bool
 }
@@ -23,39 +23,33 @@ class OneTrustInterceptorModel {
     }
     
     func fetchCategoryList() {
-        if let domainData = oneTrustSDK.getDomainGroupData() {
-            if let jsonData = try? JSONSerialization.data(withJSONObject: domainData) {
-                if let result = try? JSONDecoder().decode(OneTrustDomainGroupData.self, from: jsonData), let groups = result.groups {
-                    categoryList = groups
-                }
-            }
+        if let categoryList = oneTrustSDK.fetchCategoryList() {
+            self.categoryList = categoryList
         }
-    }
-    
-    func getConsentStatus(forCategoryId: String) -> Bool {
-        return oneTrustSDK.getConsentStatus(forCategoryId: forCategoryId)
     }
     
     func process(message: RSMessage, with serverConfig: RSServerConfigSource) -> RSMessage {
         guard let destinations = serverConfig.destinations as? [RSServerDestination], !destinations.isEmpty else {
-            RSLogger.logDebug("OneTrustInterceptor: no destination found")
+            RSLogger.logDebug("OneTrustInterceptorModel: no destination found")
             return message
         }
         
         fetchCategoryList()
         
         guard !categoryList.isEmpty else {
-            RSLogger.logDebug("OneTrustInterceptor: no OneTrustCookieCategories found from OneTrust SDK")
+            RSLogger.logDebug("OneTrustInterceptorModel: no OneTrustCookieCategories found from OneTrust SDK")
             return message
         }
         
-        let workingMessage = message
         var integrations = [String: NSObject]()
         for destination in destinations {
-            if let integration = getIntegration(from: destination) {
+            let cookieCategory: CookieCategory = OneTrustCookieCategory(destination: destination)
+            if let integration = getIntegration(from: cookieCategory) {
                 integrations.merge(integration) { (_, new) in new }
             }
         }
+        
+        let workingMessage = message
         if !integrations.isEmpty {
             if workingMessage.integrations.contains(where: { (key, _) in
                 return key == "All"
@@ -68,35 +62,24 @@ class OneTrustInterceptorModel {
         return workingMessage
     }
     
-    func getIntegration(from destination: RSServerDestination) -> [String: NSObject]? {
+    func getIntegration(from cookieCategory: CookieCategory) -> [String: NSObject]? {
         var isEnabled = false
         var integration = [String: NSObject]()
-        guard let destinationConfig: DestinationConfig? = getDestinationConfig(from: destination),
-              let oneTrustCookieCategories = destinationConfig?.oneTrustCookieCategories, !oneTrustCookieCategories.isEmpty else {
-            RSLogger.logDebug("OneTrustInterceptor: no OneTrustCookieCategories found from Config BE for \(destination.destinationName)")
+        guard let rudderOneTrustCookieCategories = cookieCategory.getRudderOneTrustCookieCategories(), !rudderOneTrustCookieCategories.isEmpty else {
+            RSLogger.logDebug("OneTrustInterceptorModel: no OneTrustCookieCategories found from Config BE for \(cookieCategory.destination.destinationName)")
             return nil
         }
-        for oneTrustCookieCategory in oneTrustCookieCategories {
+        for oneTrustCookieCategory in rudderOneTrustCookieCategories {
             if let group = categoryList.first(where: { oneTrustGroup in
                 return (oneTrustGroup.optanonGroupId == oneTrustCookieCategory || oneTrustGroup.groupName == oneTrustCookieCategory)
             }) {
-                isEnabled = getConsentStatus(forCategoryId: group.optanonGroupId)
+                isEnabled = oneTrustSDK.getConsentStatus(forCategoryId: group.optanonGroupId)
                 if !isEnabled {
                     break
                 }
             }
         }
-        integration[destination.destinationDefinition.displayName] = NSNumber(booleanLiteral: isEnabled)
+        integration[cookieCategory.destination.destinationDefinition.displayName] = NSNumber(booleanLiteral: isEnabled)
         return integration
-    }
-    
-    
-    func getDestinationConfig<T: Codable>(from destination: RSServerDestination?) -> T? {
-        if let config: [String: Any] = destination?.destinationConfig as? [String: Any] {
-            if let jsonData = try? JSONSerialization.data(withJSONObject: config) {
-                return try? JSONDecoder().decode(T.self, from: jsonData)
-            }
-        }
-        return nil
     }
 }

@@ -1,6 +1,5 @@
 //
 //  TestSDK.swift
-//  RudderOneTrust
 //
 //  Created by Pallab Maiti on 25/01/23.
 //
@@ -35,23 +34,30 @@ class TestSDK: OneTrustSDK {
         ]
     ]
     
-    func getDomainGroupData() -> [String: Any]? {
-        return domainData
+    var categoryList: [OneTrustCategory]? {
+        if let jsonData = try? JSONSerialization.data(withJSONObject: domainData), let result = try? JSONDecoder().decode(OneTrustDomainGroupData.self, from: jsonData) {
+            return result.groups
+        }
+        return nil
+    }
+    
+    func fetchCategoryList() -> [OneTrustCategory]? {
+        return categoryList
     }
     
     func getConsentStatus(forCategoryId: String) -> Bool {
-        guard let jsonData = try? JSONSerialization.data(withJSONObject: domainData), let result = try? JSONDecoder().decode(OneTrustDomainGroupData.self, from: jsonData), let groupList = result.groups, !groupList.isEmpty else {
+        guard let categoryList = categoryList, !categoryList.isEmpty else {
             return false
         }
-        for list in groupList {
+        for list in categoryList {
             switch list.optanonGroupId {
-                case "CAT01":
+                case "CAT01", "Strictly Necessary Cookies":
                     return true
-                case "CAT02":
+                case "CAT02", "Category 2":
                     return false
-                case "CAT03":
+                case "CAT03", "Category 3":
                     return true
-                case "CAT04":
+                case "CAT04", "Category 4":
                     return true
                 default:
                     return false
