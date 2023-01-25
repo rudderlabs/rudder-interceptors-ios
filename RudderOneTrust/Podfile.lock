@@ -1,0 +1,35 @@
+PODS:
+  - OneTrust-CMP-tvOS-XCFramework (202212.1.0.0)
+  - OneTrust-CMP-XCFramework (202212.1.0.0)
+  - Rudder (1.8.0)
+  - RudderOneTrust (1.0.0):
+    - OneTrust-CMP-tvOS-XCFramework (= 202212.1.0)
+    - OneTrust-CMP-XCFramework (= 202212.1.0)
+    - Rudder (~> 1.8.0)
+
+DEPENDENCIES:
+  - OneTrust-CMP-tvOS-XCFramework (= 202212.1.0)
+  - OneTrust-CMP-XCFramework (= 202212.1.0)
+  - Rudder (from `/Users/pallabmaiti/Documents/Rudder/rudder-sdk-ios-v1/`)
+  - RudderOneTrust (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - OneTrust-CMP-tvOS-XCFramework
+    - OneTrust-CMP-XCFramework
+
+EXTERNAL SOURCES:
+  Rudder:
+    :path: "/Users/pallabmaiti/Documents/Rudder/rudder-sdk-ios-v1/"
+  RudderOneTrust:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  OneTrust-CMP-tvOS-XCFramework: 74b5605a3a3904e559689bf48391300edd6c8023
+  OneTrust-CMP-XCFramework: fa1812b16760dc13cdefc5c19fc85a48a110c4a8
+  Rudder: fe4f9419ffc2a6c210581c813cc63d37435eb164
+  RudderOneTrust: 8cf62b284e192e4f8312bf84e2665499a0210306
+
+PODFILE CHECKSUM: 17ec01bba5eeb594d239923f606c9a9edd7f1a78
+
+COCOAPODS: 1.11.3
