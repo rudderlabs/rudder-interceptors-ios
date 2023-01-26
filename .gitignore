@@ -92,3 +92,5 @@ iOSInjectionProject/
 # Directory
 .DS_Store
 
+# Config file
+RudderConfig.plist

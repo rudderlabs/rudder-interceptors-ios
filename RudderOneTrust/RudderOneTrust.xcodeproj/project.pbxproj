@@ -56,6 +56,10 @@
 		ED04A22D2981B3C60080A88D /* OneTrustInterceptorModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED04A20329817B470080A88D /* OneTrustInterceptorModelTests.swift */; };
 		ED04A22F29826EC90080A88D /* test-all-destination-has-category.json in Resources */ = {isa = PBXBuildFile; fileRef = ED04A22E29826EC90080A88D /* test-all-destination-has-category.json */; };
 		ED04A23029826EC90080A88D /* test-all-destination-has-category.json in Resources */ = {isa = PBXBuildFile; fileRef = ED04A22E29826EC90080A88D /* test-all-destination-has-category.json */; };
+		ED04A23229827AB10080A88D /* RudderConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED04A23129827AB10080A88D /* RudderConfig.plist */; };
+		ED04A23329827B0F0080A88D /* RudderConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED04A23129827AB10080A88D /* RudderConfig.plist */; };
+		ED04A2352982D5960080A88D /* RudderConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED04A2342982D5960080A88D /* RudderConfig.swift */; };
+		ED04A2362982D5960080A88D /* RudderConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED04A2342982D5960080A88D /* RudderConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,7 +122,6 @@
 		ED04A1EE298022B50080A88D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED04A1F0298022B60080A88D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED04A1F3298022B60080A88D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		ED04A1F8298027BB0080A88D /* package.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = package.json; path = ../package.json; sourceTree = "<group>"; };
 		ED04A1FF298131D30080A88D /* TestSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSDK.swift; sourceTree = "<group>"; };
 		ED04A20329817B470080A88D /* OneTrustInterceptorModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTrustInterceptorModelTests.swift; sourceTree = "<group>"; };
 		ED04A20529817FE80080A88D /* OneTrustCookieCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTrustCookieCategory.swift; sourceTree = "<group>"; };
@@ -127,6 +130,8 @@
 		ED04A2182981AD8C0080A88D /* test-destination-has-no-category.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "test-destination-has-no-category.json"; sourceTree = "<group>"; };
 		ED04A21C2981AD8C0080A88D /* test-some-destination-has-category.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "test-some-destination-has-category.json"; sourceTree = "<group>"; };
 		ED04A22E29826EC90080A88D /* test-all-destination-has-category.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "test-all-destination-has-category.json"; sourceTree = "<group>"; };
+		ED04A23129827AB10080A88D /* RudderConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = RudderConfig.plist; sourceTree = "<group>"; };
+		ED04A2342982D5960080A88D /* RudderConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RudderConfig.swift; sourceTree = "<group>"; };
 		EFEF0592BE11CAF46EE63BB7 /* Pods_RudderOneTrusttvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RudderOneTrusttvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1688B1D22648AF46A97DE52 /* Pods_SampleSwiftiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleSwiftiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6FAF017F463077BE83C1787 /* Pods-RudderOneTrusttvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RudderOneTrusttvOS.release.xcconfig"; path = "Target Support Files/Pods-RudderOneTrusttvOS/Pods-RudderOneTrusttvOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -223,11 +228,11 @@
 		ED049F1D297FE8BE0080A88D = {
 			isa = PBXGroup;
 			children = (
-				ED04A1F8298027BB0080A88D /* package.json */,
 				ED04A1CA298016840080A88D /* Podfile */,
 				ED04A1C9298016840080A88D /* RudderOneTrust.podspec */,
 				ED049F69298013FE0080A88D /* Sources */,
 				ED04A1A2298014EA0080A88D /* Tests */,
+				ED04A2372982D8280080A88D /* RudderConfig */,
 				ED049F37297FE9460080A88D /* RudderOneTrustiOS */,
 				ED049F43297FE95B0080A88D /* RudderOneTrusttvOS */,
 				ED04A1D0298022720080A88D /* SampleSwiftiOS */,
@@ -360,6 +365,15 @@
 				ED04A2182981AD8C0080A88D /* test-destination-has-no-category.json */,
 			);
 			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		ED04A2372982D8280080A88D /* RudderConfig */ = {
+			isa = PBXGroup;
+			children = (
+				ED04A2342982D5960080A88D /* RudderConfig.swift */,
+				ED04A23129827AB10080A88D /* RudderConfig.plist */,
+			);
+			path = RudderConfig;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -592,6 +606,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED04A23229827AB10080A88D /* RudderConfig.plist in Resources */,
 				ED04A1DE298022740080A88D /* LaunchScreen.storyboard in Resources */,
 				ED04A1DB298022740080A88D /* Assets.xcassets in Resources */,
 				ED04A1D9298022720080A88D /* Main.storyboard in Resources */,
@@ -602,6 +617,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED04A23329827B0F0080A88D /* RudderConfig.plist in Resources */,
 				ED04A1F4298022B60080A88D /* LaunchScreen.storyboard in Resources */,
 				ED04A1F1298022B60080A88D /* Assets.xcassets in Resources */,
 				ED04A1EF298022B50080A88D /* Main.storyboard in Resources */,
@@ -869,6 +885,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED04A1D6298022720080A88D /* ViewController.swift in Sources */,
+				ED04A2352982D5960080A88D /* RudderConfig.swift in Sources */,
 				ED04A1D2298022720080A88D /* AppDelegate.swift in Sources */,
 				ED04A1D4298022720080A88D /* SceneDelegate.swift in Sources */,
 			);
@@ -878,6 +895,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED04A2362982D5960080A88D /* RudderConfig.swift in Sources */,
 				ED04A1EC298022B50080A88D /* ViewController.swift in Sources */,
 				ED04A1EA298022B50080A88D /* AppDelegate.swift in Sources */,
 			);
