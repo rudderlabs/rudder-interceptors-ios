@@ -51,13 +51,7 @@ class OneTrustInterceptorModel {
         
         let workingMessage = message
         if !integrations.isEmpty {
-            if workingMessage.integrations.contains(where: { (key, _) in
-                return key == "All"
-            }) {
-                workingMessage.integrations = integrations
-            } else {
-                workingMessage.integrations.merge(integrations) { (_, new) in new }
-            }
+            workingMessage.integrations.merge(integrations) { (_, new) in new }
         }
         return workingMessage
     }

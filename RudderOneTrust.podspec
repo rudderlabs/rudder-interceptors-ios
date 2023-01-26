@@ -4,7 +4,7 @@ package = JSON.parse(File.read(File.join(__dir__, 'package.json')))
 
 Pod::Spec.new do |s|
   s.name             = 'RudderOneTrust'
-  s.module_name             = 'RudderOneTrust'
+  s.module_name      = 'RudderOneTrust'
   s.version          = package['onetrust_version']
   s.summary          = "Privacy and Security focused Segment-alternative. iOS, tvOS, watchOS & macOS SDK"
   s.description      = <<-DESC

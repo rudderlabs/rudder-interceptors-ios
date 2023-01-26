@@ -33,11 +33,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     .withSessionTimeoutMillis(30000)
                     .withConsent(OneTrustInterceptor())
                 
-                let option = RSOption()
+//                let option = RSOption()
                 //                option.putIntegration("Firebase", isEnabled: true)
                 //                option.putIntegration("Adroll", isEnabled: true)
-                option.putIntegration("All", isEnabled: true)
-                RSClient.getInstance("2KDT361Ms7fMlomDoi9t12aXtNX", config: builder.build(), options: option)
+//                option.putIntegration("All", isEnabled: true)
+                RSClient.getInstance("2KDT361Ms7fMlomDoi9t12aXtNX", config: builder.build())
             }
         }
         return true

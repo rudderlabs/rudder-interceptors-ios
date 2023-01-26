@@ -63,6 +63,9 @@ internal final class TestUtils {
         }
         let message = builder.build()
         message.type = RSTrack
+        if message.integrations.isEmpty {
+            message.integrations = ["All": true as NSObject]
+        }
         return message
     }
     
@@ -80,6 +83,9 @@ internal final class TestUtils {
         }
         let message = builder.build()
         message.type = RSScreen
+        if message.integrations.isEmpty {
+            message.integrations = ["All": true as NSObject]
+        }
         return message
     }
     
@@ -94,6 +100,9 @@ internal final class TestUtils {
         }
         let message = builder.build()
         message.type = RSGroup
+        if message.integrations.isEmpty {
+            message.integrations = ["All": true as NSObject]
+        }
         return message
     }
     
@@ -118,6 +127,9 @@ internal final class TestUtils {
         let message = builder.build()
         message.updateTraitsDict(traits)
         message.type = RSAlias
+        if message.integrations.isEmpty {
+            message.integrations = ["All": true as NSObject]
+        }
         return message
     }
     
@@ -136,6 +148,9 @@ internal final class TestUtils {
         }
         let message = builder.build()
         message.type = RSIdentify
+        if message.integrations.isEmpty {
+            message.integrations = ["All": true as NSObject]
+        }
         return message
     }
 }

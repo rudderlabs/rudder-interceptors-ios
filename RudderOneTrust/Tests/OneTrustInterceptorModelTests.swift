@@ -30,7 +30,7 @@ final class OneTrustInterceptorModelTests: XCTestCase {
         
     func test_getIntegration() {
         let testUtils = TestUtils()
-        let serverConfig = testUtils.getServerConfig(forResource: "test-mix-destination-mix-category", ofType: "json")
+        let serverConfig = testUtils.getServerConfig(forResource: "test-some-destination-has-category", ofType: "json")
         XCTAssertNotNil(serverConfig.destinations)
         XCTAssertTrue(serverConfig.destinations is [RSServerDestination])
         

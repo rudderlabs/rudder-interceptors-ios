@@ -49,20 +49,20 @@ class TestSDK: OneTrustSDK {
         guard let categoryList = categoryList, !categoryList.isEmpty else {
             return false
         }
-        for list in categoryList {
-            switch list.optanonGroupId {
-                case "CAT01", "Strictly Necessary Cookies":
-                    return true
-                case "CAT02", "Category 2":
-                    return false
-                case "CAT03", "Category 3":
-                    return true
-                case "CAT04", "Category 4":
-                    return true
-                default:
-                    return false
-            }
+        let category = categoryList.first { category in
+            return category.optanonGroupId == forCategoryId
         }
-        return false
+        switch category?.optanonGroupId {
+            case "CAT01":
+                return true
+            case "CAT02":
+                return false
+            case "CAT03":
+                return true
+            case "CAT04":
+                return true
+            default:
+                return false
+        }
     }
 }

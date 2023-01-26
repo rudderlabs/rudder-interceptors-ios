@@ -217,7 +217,7 @@
                     "eventName": ""
                 }],
                 "oneTrustCookieCategories": [{
-                    "oneTrustCookieCategory": ""
+                    "oneTrustCookieCategory": "CAT04"
                 }],
                 "eventFilteringOption": "disable"
             },
