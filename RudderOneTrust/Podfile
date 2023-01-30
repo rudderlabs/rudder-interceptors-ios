@@ -34,3 +34,13 @@ target 'SampleSwifttvOS' do
     platform :tvos, '11.0'
     pod 'RudderOneTrust', :path => '../'
 end
+
+target 'SampleObjCiOS' do
+    platform :ios, '11.0'
+    pod 'RudderOneTrust', :path => '../'
+end
+
+target 'SampleObjCtvOS' do
+    platform :tvos, '11.0'
+    pod 'RudderOneTrust', :path => '../'
+end

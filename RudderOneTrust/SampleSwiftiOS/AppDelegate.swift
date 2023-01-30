@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     .withLoglevel(RSLogLevelDebug)
 //                    .withDataPlaneUrl(rudderConfig.DEV_DATA_PLANE_URL)
 //                    .withControlPlaneUrl(rudderConfig.DEV_CONTROL_PLANE_URL)
-                    .withConsent(OneTrustInterceptor())
+                    .withConsentInterceptor(OneTrustInterceptor())
                 
 //                let option = RSOption()
 //                option.putIntegration("Firebase", isEnabled: true)
