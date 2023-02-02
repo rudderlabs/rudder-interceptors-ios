@@ -184,6 +184,24 @@
 		ED04A2EB2987C8380080A88D /* SampleObjCiOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SampleObjCiOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		ED04A2F2298808020080A88D /* SampleObjCtvOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SampleObjCtvOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		ED7DFD6629896AFA00ED5A8E /* SampleRudderConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SampleRudderConfig.plist; sourceTree = "<group>"; };
+		ED7DFD6C298B936800ED5A8E /* deploy-cocoapods.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "deploy-cocoapods.yml"; sourceTree = "<group>"; };
+		ED7DFD6D298B936800ED5A8E /* notion-pr-sync.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "notion-pr-sync.yml"; sourceTree = "<group>"; };
+		ED7DFD6E298B936800ED5A8E /* check-pr-title.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "check-pr-title.yml"; sourceTree = "<group>"; };
+		ED7DFD6F298B936800ED5A8E /* publish-new-release.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "publish-new-release.yml"; sourceTree = "<group>"; };
+		ED7DFD70298B936800ED5A8E /* test.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = test.yml; sourceTree = "<group>"; };
+		ED7DFD71298B936800ED5A8E /* slack-notify.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "slack-notify.yml"; sourceTree = "<group>"; };
+		ED7DFD72298B936800ED5A8E /* build-and-quality-checks.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "build-and-quality-checks.yml"; sourceTree = "<group>"; };
+		ED7DFD73298B936800ED5A8E /* draft-new-release.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "draft-new-release.yml"; sourceTree = "<group>"; };
+		ED7DFD74298B936800ED5A8E /* pull_request_template.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = pull_request_template.md; sourceTree = "<group>"; };
+		ED7DFD75298B936800ED5A8E /* dependabot.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = dependabot.yml; sourceTree = "<group>"; };
+		ED7DFD76298B936800ED5A8E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		ED7DFD77298B936800ED5A8E /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		ED7DFD78298B936900ED5A8E /* CODEOWNERS */ = {isa = PBXFileReference; lastKnownFileType = text; name = CODEOWNERS; path = ../CODEOWNERS; sourceTree = "<group>"; };
+		ED7DFD79298B936900ED5A8E /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = CONTRIBUTING.md; path = ../CONTRIBUTING.md; sourceTree = "<group>"; };
+		ED7DFD7A298B936900ED5A8E /* package.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = package.json; path = ../package.json; sourceTree = "<group>"; };
+		ED7DFD7B298B936900ED5A8E /* sonar-project.properties */ = {isa = PBXFileReference; lastKnownFileType = text; name = "sonar-project.properties"; path = "../sonar-project.properties"; sourceTree = "<group>"; };
+		ED7DFD7C298B936900ED5A8E /* xccov-to-generic.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = "xccov-to-generic.sh"; path = "../xccov-to-generic.sh"; sourceTree = "<group>"; };
+		ED7DFD7D298B936900ED5A8E /* CODE_OF_CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = CODE_OF_CONDUCT.md; path = ../CODE_OF_CONDUCT.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -297,8 +315,7 @@
 		ED049F1D297FE8BE0080A88D = {
 			isa = PBXGroup;
 			children = (
-				ED04A1CA298016840080A88D /* Podfile */,
-				ED04A1C9298016840080A88D /* RudderOneTrust.podspec */,
+				ED7DFD69298B930500ED5A8E /* Others */,
 				ED049F69298013FE0080A88D /* Sources */,
 				ED04A1A2298014EA0080A88D /* Tests */,
 				ED04A2372982D8280080A88D /* RudderConfig */,
@@ -483,6 +500,50 @@
 				ED04A2F2298808020080A88D /* SampleObjCtvOS-Bridging-Header.h */,
 			);
 			path = SampleObjCtvOS;
+			sourceTree = "<group>";
+		};
+		ED7DFD69298B930500ED5A8E /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				ED7DFD6A298B936800ED5A8E /* .github */,
+				ED7DFD7D298B936900ED5A8E /* CODE_OF_CONDUCT.md */,
+				ED7DFD78298B936900ED5A8E /* CODEOWNERS */,
+				ED7DFD79298B936900ED5A8E /* CONTRIBUTING.md */,
+				ED7DFD77298B936800ED5A8E /* LICENSE */,
+				ED7DFD7A298B936900ED5A8E /* package.json */,
+				ED04A1CA298016840080A88D /* Podfile */,
+				ED7DFD76298B936800ED5A8E /* README.md */,
+				ED04A1C9298016840080A88D /* RudderOneTrust.podspec */,
+				ED7DFD7B298B936900ED5A8E /* sonar-project.properties */,
+				ED7DFD7C298B936900ED5A8E /* xccov-to-generic.sh */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		ED7DFD6A298B936800ED5A8E /* .github */ = {
+			isa = PBXGroup;
+			children = (
+				ED7DFD6B298B936800ED5A8E /* workflows */,
+				ED7DFD74298B936800ED5A8E /* pull_request_template.md */,
+				ED7DFD75298B936800ED5A8E /* dependabot.yml */,
+			);
+			name = .github;
+			path = ../.github;
+			sourceTree = "<group>";
+		};
+		ED7DFD6B298B936800ED5A8E /* workflows */ = {
+			isa = PBXGroup;
+			children = (
+				ED7DFD6C298B936800ED5A8E /* deploy-cocoapods.yml */,
+				ED7DFD6D298B936800ED5A8E /* notion-pr-sync.yml */,
+				ED7DFD6E298B936800ED5A8E /* check-pr-title.yml */,
+				ED7DFD6F298B936800ED5A8E /* publish-new-release.yml */,
+				ED7DFD70298B936800ED5A8E /* test.yml */,
+				ED7DFD71298B936800ED5A8E /* slack-notify.yml */,
+				ED7DFD72298B936800ED5A8E /* build-and-quality-checks.yml */,
+				ED7DFD73298B936800ED5A8E /* draft-new-release.yml */,
+			);
+			path = workflows;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
