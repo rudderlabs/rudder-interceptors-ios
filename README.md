@@ -67,18 +67,18 @@ NS_ASSUME_NONNULL_END
 ```swift
 @objc
 open class OneTrustInterceptor: NSObject, RSConsentInterceptor {
-  @objc
-  public override init() {
-    super.init()
-  }
+    @objc
+    public override init() {
+        super.init()
+    }
 
-  public func intercept(
-    withServerConfig serverConfig: RSServerConfigSource, andMessage message: RSMessage
-  ) -> RSMessage {
-    let updatedMessage = message
-    // Do something
-    return updatedMessage
-  }
+    public func intercept(
+        withServerConfig serverConfig: RSServerConfigSource, andMessage message: RSMessage
+    ) -> RSMessage {
+        let updatedMessage = message
+        // Do something
+        return updatedMessage
+    }
 }
 ```
 
@@ -101,9 +101,9 @@ RSConfigBuilder *builder = [[RSConfigBuilder alloc] init];
 
 ```swift
 let builder: RSConfigBuilder = RSConfigBuilder()
-  .withLoglevel(RSLogLevelDebug)
-  .withDataPlaneUrl(DATA_PLANE_URL)
-  .withConsentInterceptor(CustomConsentInterceptor())
+    .withLoglevel(RSLogLevelDebug)
+    .withDataPlaneUrl(DATA_PLANE_URL)
+    .withConsentInterceptor(CustomConsentInterceptor())
 
 RSClient.getInstance(rudderConfig.WRITE_KEY, config: builder.build())
 ```
@@ -151,18 +151,18 @@ import RudderOneTrust
 
 ```swift
 OTPublishersHeadlessSDK.shared.startSDK(
-  storageLocation: STORAGE_LOCATION,
-  domainIdentifier: DOMAIN_IDENTIFIER,
-  languageCode: "en"
+    storageLocation: STORAGE_LOCATION,
+    domainIdentifier: DOMAIN_IDENTIFIER,
+    languageCode: "en"
 ) { response in
-  if response.status {
-    let builder: RSConfigBuilder = RSConfigBuilder()
-      .withLoglevel(RSLogLevelDebug)
-      .withDataPlaneUrl(DATA_PLANE_URL)
-      .withConsentInterceptor(OneTrustInterceptor())
+    if response.status {
+        let builder: RSConfigBuilder = RSConfigBuilder()
+            .withLoglevel(RSLogLevelDebug)
+            .withDataPlaneUrl(DATA_PLANE_URL)
+            .withConsentInterceptor(OneTrustInterceptor())
 
-    RSClient.getInstance(rudderConfig.WRITE_KEY, config: builder.build())
-  }
+        RSClient.getInstance(rudderConfig.WRITE_KEY, config: builder.build())
+    }
 }
 ```
 
