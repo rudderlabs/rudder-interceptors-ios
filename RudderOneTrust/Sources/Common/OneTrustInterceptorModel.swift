@@ -15,7 +15,7 @@ protocol OneTrustSDK {
 }
 
 class OneTrustInterceptorModel {    
-    var oneTrustSDK: OneTrustSDK!
+    private var oneTrustSDK: OneTrustSDK!
     var categoryList = [OneTrustCategory]()
     
     init(oneTrustSDK: OneTrustSDK) {
@@ -67,9 +67,11 @@ class OneTrustInterceptorModel {
         var integration = [String: NSObject]()
         for oneTrustCookieCategory in rudderOneTrustCookieCategories {
             if let group = categoryList.first(where: { oneTrustGroup in
-                return (oneTrustGroup.optanonGroupId == oneTrustCookieCategory || oneTrustGroup.groupName == oneTrustCookieCategory)
+                return (oneTrustGroup.customGroupId == oneTrustCookieCategory || oneTrustGroup.groupName == oneTrustCookieCategory)
             }) {
-                isEnabled = oneTrustSDK.getConsentStatus(forCategoryId: group.optanonGroupId)
+                isEnabled = oneTrustSDK.getConsentStatus(forCategoryId: group.customGroupId)
+                /// if `isEnabled` is become false exist from the loop.
+                /// if any consent status is false, the integration will be false.
                 if !isEnabled {
                     break
                 }

@@ -50,9 +50,9 @@ class TestSDK: OneTrustSDK {
             return false
         }
         let category = categoryList.first { category in
-            return category.optanonGroupId == forCategoryId
+            return category.customGroupId == forCategoryId
         }
-        switch category?.optanonGroupId {
+        switch category?.customGroupId {
             case "CAT01":
                 return true
             case "CAT02":

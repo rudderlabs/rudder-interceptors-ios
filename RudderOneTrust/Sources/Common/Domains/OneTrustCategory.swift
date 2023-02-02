@@ -8,9 +8,9 @@
 import Foundation
 
 class OneTrustCategory: Codable {
-    private let _optanonGroupId: String?
-    var optanonGroupId: String {
-        return _optanonGroupId ?? ""
+    private let _customGroupId: String?
+    var customGroupId: String {
+        return _customGroupId ?? ""
     }
     
     private let _groupName: String?
@@ -19,7 +19,7 @@ class OneTrustCategory: Codable {
     }
     
     enum CodingKeys: String, CodingKey {
-        case _optanonGroupId = "CustomGroupId"
+        case _customGroupId = "CustomGroupId"
         case _groupName = "GroupName"
     }
 }
