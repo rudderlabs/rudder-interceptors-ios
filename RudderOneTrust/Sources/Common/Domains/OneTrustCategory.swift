@@ -19,7 +19,7 @@ class OneTrustCategory: Codable {
     }
     
     enum CodingKeys: String, CodingKey {
-        case _optanonGroupId = "OptanonGroupId"
+        case _optanonGroupId = "CustomGroupId"
         case _groupName = "GroupName"
     }
 }

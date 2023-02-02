@@ -52,17 +52,19 @@ class OneTrustInterceptorModel {
         let workingMessage = message
         if !integrations.isEmpty {
             workingMessage.integrations.merge(integrations) { (_, new) in new }
+            // Remove integrations those are true except All
+            workingMessage.integrations = workingMessage.integrations.filter({ $0.key == "All" || $0.value == NSNumber(booleanLiteral: false)})
         }
         return workingMessage
     }
     
     func getIntegration(from cookieCategory: CookieCategory) -> [String: NSObject]? {
-        var isEnabled = false
-        var integration = [String: NSObject]()
         guard let rudderOneTrustCookieCategories = cookieCategory.getRudderOneTrustCookieCategories(), !rudderOneTrustCookieCategories.isEmpty else {
             RSLogger.logDebug("OneTrustInterceptorModel: no OneTrustCookieCategories found from Config BE for \(cookieCategory.destination.destinationName)")
             return nil
         }
+        var isEnabled = false
+        var integration = [String: NSObject]()
         for oneTrustCookieCategory in rudderOneTrustCookieCategories {
             if let group = categoryList.first(where: { oneTrustGroup in
                 return (oneTrustGroup.optanonGroupId == oneTrustCookieCategory || oneTrustGroup.groupName == oneTrustCookieCategory)

@@ -37,8 +37,7 @@ final class OneTrustInterceptorTests: XCTestCase {
         // Given
         let expected: [String: NSObject] = [
             "All": true as NSObject,
-            "Amplitude": false as NSObject,
-            "Adroll": true as NSObject,
+            "Amplitude": false as NSObject,            
             "Google Analytics": false as NSObject
         ]
         
@@ -56,7 +55,6 @@ final class OneTrustInterceptorTests: XCTestCase {
         // Given
         let expected: [String: NSObject] = [
             "Amplitude": false as NSObject,
-            "Adroll": true as NSObject,
             "Google Analytics": false as NSObject
         ]
         
@@ -111,9 +109,7 @@ final class OneTrustInterceptorTests: XCTestCase {
         let expected: [String: NSObject] = [
             "All": true as NSObject,
             "Amplitude": false as NSObject,
-            "Adroll": true as NSObject,
-            "Google Analytics": false as NSObject,
-            "Appcues": true as NSObject
+            "Google Analytics": false as NSObject
         ]
         
         // When
@@ -130,9 +126,7 @@ final class OneTrustInterceptorTests: XCTestCase {
         // Given
         let expected: [String: NSObject] = [
             "Amplitude": false as NSObject,
-            "Adroll": true as NSObject,
-            "Google Analytics": false as NSObject,
-            "Appcues": true as NSObject
+            "Google Analytics": false as NSObject
         ]
         
         // When

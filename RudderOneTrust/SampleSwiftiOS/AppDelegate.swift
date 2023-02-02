@@ -29,15 +29,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             if response.status {
                 let builder: RSConfigBuilder = RSConfigBuilder()
                     .withLoglevel(RSLogLevelDebug)
-//                    .withDataPlaneUrl(rudderConfig.DEV_DATA_PLANE_URL)
-//                    .withControlPlaneUrl(rudderConfig.DEV_CONTROL_PLANE_URL)
+                    .withDataPlaneUrl(rudderConfig.LOCAL_DATA_PLANE_URL)
+                    .withControlPlaneUrl(rudderConfig.DEV_CONTROL_PLANE_URL)
                     .withConsentInterceptor(OneTrustInterceptor())
                 
-//                let option = RSOption()
-//                option.putIntegration("Firebase", isEnabled: true)
-//                option.putIntegration("Adroll", isEnabled: true)
-//                option.putIntegration("All", isEnabled: true)
-                RSClient.getInstance(rudderConfig.WRITE_KEY, config: builder.build())
+                let option = RSOption()
+                option.putIntegration("Firebase", isEnabled: true)
+                option.putIntegration("Braze", isEnabled: true)
+                option.putIntegration("AppsFlyer", isEnabled: false)
+                RSClient.getInstance(rudderConfig.WRITE_KEY, config: builder.build(), options: option)
+//                RSClient.getInstance(rudderConfig.WRITE_KEY, config: builder.build())
             }
         }
         return true

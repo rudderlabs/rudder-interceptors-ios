@@ -16,19 +16,19 @@ class TestSDK: OneTrustSDK {
     let domainData: [String: Any] = [
         "Groups": [
             [
-                "OptanonGroupId": "CAT01",
+                "CustomGroupId": "CAT01",
                 "GroupName": "Strictly Necessary Cookies"
             ],
             [
-                "OptanonGroupId": "CAT02",
+                "CustomGroupId": "CAT02",
                 "GroupName": "Category 2"
             ],
             [
-                "OptanonGroupId": "CAT03",
+                "CustomGroupId": "CAT03",
                 "GroupName": "Category 3"
             ],
             [
-                "OptanonGroupId": "CAT04",
+                "CustomGroupId": "CAT04",
                 "GroupName": "Category 4"
             ]
         ]

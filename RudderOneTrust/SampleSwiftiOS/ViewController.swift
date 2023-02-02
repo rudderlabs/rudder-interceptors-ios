@@ -18,7 +18,11 @@ class ViewController: UIViewController {
     }
 
     @IBAction func onTrack(_ sender: UIButton) {
-        RSClient.sharedInstance()?.track("Test Track")
+        let option = RSOption()
+        option.putIntegration("Firebase", isEnabled: false)
+        option.putIntegration("Adjust", isEnabled: true)
+        RSClient.sharedInstance()?.track("Test Track", properties: [:], options: option)
+//        RSClient.sharedInstance()?.track("Test Track")
     }
 }
 
