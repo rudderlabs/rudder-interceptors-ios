@@ -166,7 +166,7 @@ OTPublishersHeadlessSDK.shared.startSDK(
 }
 ```
 
-| Important: Make sure you load the SDK only after initializing the OneTrust SDK successfully. |
+| Important: It is recommended to load the SDK only after initializing the OneTrust SDK successfully. |
 | :----|
 
 ## License
