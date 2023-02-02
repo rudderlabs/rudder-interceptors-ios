@@ -20,7 +20,7 @@
 
 # Consent Management for RudderStack iOS SDK
 
-| The RudderStack iOS SDK supports OneTrust consent management from version 1.9.0. |
+| The RudderOneTrust iOS SDK supports OneTrust consent management from Rudder version 1.9.0. |
 | :----|
 
 The [RudderStack iOS SDK](https://www.rudderstack.com/docs/sources/event-streams/sdks/rudderstack-ios-sdk/) lets you specify the user's consent during initialization. This readme lists the necessary steps to develop a consent interceptor for the iOS SDK and use it to initialize the SDK once the user gives their consent.
