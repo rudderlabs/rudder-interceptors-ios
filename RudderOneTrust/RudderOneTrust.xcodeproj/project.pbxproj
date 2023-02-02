@@ -7,14 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		19F056CCAA9D5A77AE12F299 /* Pods_RudderOneTrusttvOS_RudderOneTrusttvOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E13A4FA87B538739A50D06F3 /* Pods_RudderOneTrusttvOS_RudderOneTrusttvOSTests.framework */; };
-		2E214E1BE5BC038C331F8844 /* Pods_RudderOneTrusttvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD55AEF6157C36144E0C8041 /* Pods_RudderOneTrusttvOS.framework */; };
-		4B5CB3E7A559D4FEA0C19510 /* Pods_SampleObjCiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 879AB53F774B3F18104A0A26 /* Pods_SampleObjCiOS.framework */; };
-		573D2EEF4258E1E08EA94F61 /* Pods_RudderOneTrustiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4205C83D4B6BA66EB72BED9F /* Pods_RudderOneTrustiOS.framework */; };
-		66AF3BBE5218A5C50713A7F9 /* Pods_SampleSwiftiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B646F19483CB2BD467BD1C /* Pods_SampleSwiftiOS.framework */; };
-		96A48464ADCB5772270F8DED /* Pods_RudderOneTrustiOS_RudderOneTrustiOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EBF6492D3C75D66BC8BD04 /* Pods_RudderOneTrustiOS_RudderOneTrustiOSTests.framework */; };
-		B0145D22864740E75C0B50D9 /* Pods_SampleSwifttvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77FA663E1B3D78C028024558 /* Pods_SampleSwifttvOS.framework */; };
-		D5E5BA292FC5E117EC13E81F /* Pods_SampleObjCtvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C9D9A3FC53D084C5774224 /* Pods_SampleObjCtvOS.framework */; };
+		48BC79A048FDB990D3747E00 /* Pods_RudderOneTrusttvOS_RudderOneTrusttvOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F5AC519E37D4F63CA024AC /* Pods_RudderOneTrusttvOS_RudderOneTrusttvOSTests.framework */; };
+		749B63EB192B95C9327E6A18 /* Pods_RudderOneTrustiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAD3F0AA645B79636F6D57D7 /* Pods_RudderOneTrustiOS.framework */; };
+		9C528E6B4F07C62A2CB9BD16 /* Pods_RudderOneTrustiOS_RudderOneTrustiOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E345475DBA690581201A3FB6 /* Pods_RudderOneTrustiOS_RudderOneTrustiOSTests.framework */; };
+		B92846E7C4C91A4B8077CD89 /* Pods_RudderOneTrusttvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 029BDC1117314C7798770143 /* Pods_RudderOneTrusttvOS.framework */; };
+		D9D52637D2CA405C2E5889CC /* Pods_SampleObjCtvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A0499112E4FC23B2E52CCA /* Pods_SampleObjCtvOS.framework */; };
 		ED049F39297FE9460080A88D /* RudderOneTrustiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = ED049F38297FE9460080A88D /* RudderOneTrustiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ED049F45297FE95B0080A88D /* RudderOneTrusttvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = ED049F44297FE95B0080A88D /* RudderOneTrusttvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ED049F74298013FE0080A88D /* iOSSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED049F6B298013FE0080A88D /* iOSSDK.swift */; };
@@ -77,6 +74,10 @@
 		ED04A2E42987C25C0080A88D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED04A2E32987C25C0080A88D /* main.m */; };
 		ED04A2EE2987C8660080A88D /* RudderConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED04A2342982D5960080A88D /* RudderConfig.swift */; };
 		ED04A2F52988080E0080A88D /* RudderConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED04A2342982D5960080A88D /* RudderConfig.swift */; };
+		ED7DFD7F298BF88900ED5A8E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED7DFD7E298BF88900ED5A8E /* GoogleService-Info.plist */; };
+		EE2407F93778DB7AEAEF2807 /* Pods_SampleSwifttvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E557FE025002ED99DB83573 /* Pods_SampleSwifttvOS.framework */; };
+		EEE8D57CCAD0C4AF34E54C29 /* Pods_SampleSwiftiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD86DB4431F04CB92F007C99 /* Pods_SampleSwiftiOS.framework */; };
+		FDDFFE9869ECD9DC20F7F107 /* Pods_SampleObjCiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C89A1D5EF71C550A5250CA2E /* Pods_SampleObjCiOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,30 +98,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05082CA9470A98F4252710AC /* Pods-RudderOneTrusttvOS-RudderOneTrusttvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RudderOneTrusttvOS-RudderOneTrusttvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-RudderOneTrusttvOS-RudderOneTrusttvOSTests/Pods-RudderOneTrusttvOS-RudderOneTrusttvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		0E7EB59F0CED35169CA579E8 /* Pods-RudderOneTrusttvOS-RudderOneTrusttvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RudderOneTrusttvOS-RudderOneTrusttvOSTests.release.xcconfig"; path = "Target Support Files/Pods-RudderOneTrusttvOS-RudderOneTrusttvOSTests/Pods-RudderOneTrusttvOS-RudderOneTrusttvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		144EA6B62D1611CDD48F1B90 /* Pods-SampleSwifttvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleSwifttvOS.debug.xcconfig"; path = "Target Support Files/Pods-SampleSwifttvOS/Pods-SampleSwifttvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		1BCD96DC3857C0C238D1354D /* Pods-RudderOneTrustiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RudderOneTrustiOS.release.xcconfig"; path = "Target Support Files/Pods-RudderOneTrustiOS/Pods-RudderOneTrustiOS.release.xcconfig"; sourceTree = "<group>"; };
-		219FE3696B8AD4EB6C17A1FF /* Pods-RudderOneTrusttvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RudderOneTrusttvOS.debug.xcconfig"; path = "Target Support Files/Pods-RudderOneTrusttvOS/Pods-RudderOneTrusttvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		259EAB4F447DD22CFE1B8DAA /* Pods-SampleSwiftiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleSwiftiOS.debug.xcconfig"; path = "Target Support Files/Pods-SampleSwiftiOS/Pods-SampleSwiftiOS.debug.xcconfig"; sourceTree = "<group>"; };
-		4205C83D4B6BA66EB72BED9F /* Pods_RudderOneTrustiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RudderOneTrustiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		44F8B01D7496D60B4E5EEF6E /* Pods-SampleObjCtvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleObjCtvOS.release.xcconfig"; path = "Target Support Files/Pods-SampleObjCtvOS/Pods-SampleObjCtvOS.release.xcconfig"; sourceTree = "<group>"; };
-		4599DB7564B0BA5DF52D0ED8 /* Pods-RudderOneTrustiOS-RudderOneTrustiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RudderOneTrustiOS-RudderOneTrustiOSTests.release.xcconfig"; path = "Target Support Files/Pods-RudderOneTrustiOS-RudderOneTrustiOSTests/Pods-RudderOneTrustiOS-RudderOneTrustiOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		46EBF6492D3C75D66BC8BD04 /* Pods_RudderOneTrustiOS_RudderOneTrustiOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RudderOneTrustiOS_RudderOneTrustiOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		48C9D9A3FC53D084C5774224 /* Pods_SampleObjCtvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleObjCtvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		490E341BC0CB78FBC7E194FA /* Pods-RudderOneTrustiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RudderOneTrustiOS.debug.xcconfig"; path = "Target Support Files/Pods-RudderOneTrustiOS/Pods-RudderOneTrustiOS.debug.xcconfig"; sourceTree = "<group>"; };
-		5C7DC7F6DAE37171DA4728D3 /* Pods-SampleObjCtvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleObjCtvOS.debug.xcconfig"; path = "Target Support Files/Pods-SampleObjCtvOS/Pods-SampleObjCtvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		7447CF5A8D25AFB1E7064E6A /* Pods-SampleSwifttvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleSwifttvOS.release.xcconfig"; path = "Target Support Files/Pods-SampleSwifttvOS/Pods-SampleSwifttvOS.release.xcconfig"; sourceTree = "<group>"; };
-		77FA663E1B3D78C028024558 /* Pods_SampleSwifttvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleSwifttvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		879AB53F774B3F18104A0A26 /* Pods_SampleObjCiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleObjCiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9E0014856748BA4FFD207875 /* Pods-RudderOneTrustiOS-RudderOneTrustiOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RudderOneTrustiOS-RudderOneTrustiOSTests.debug.xcconfig"; path = "Target Support Files/Pods-RudderOneTrustiOS-RudderOneTrustiOSTests/Pods-RudderOneTrustiOS-RudderOneTrustiOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		A5B646F19483CB2BD467BD1C /* Pods_SampleSwiftiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleSwiftiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B4584F880FD4F0E0365CE04F /* Pods-RudderOneTrusttvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RudderOneTrusttvOS.release.xcconfig"; path = "Target Support Files/Pods-RudderOneTrusttvOS/Pods-RudderOneTrusttvOS.release.xcconfig"; sourceTree = "<group>"; };
-		B83622C8A8BE9855D03EE195 /* Pods-SampleObjCiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleObjCiOS.debug.xcconfig"; path = "Target Support Files/Pods-SampleObjCiOS/Pods-SampleObjCiOS.debug.xcconfig"; sourceTree = "<group>"; };
-		BDED82D68F45A1068E953983 /* Pods-SampleSwiftiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleSwiftiOS.release.xcconfig"; path = "Target Support Files/Pods-SampleSwiftiOS/Pods-SampleSwiftiOS.release.xcconfig"; sourceTree = "<group>"; };
-		CD55AEF6157C36144E0C8041 /* Pods_RudderOneTrusttvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RudderOneTrusttvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DDA734B505D7CDFF65D53AB0 /* Pods-SampleObjCiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleObjCiOS.release.xcconfig"; path = "Target Support Files/Pods-SampleObjCiOS/Pods-SampleObjCiOS.release.xcconfig"; sourceTree = "<group>"; };
-		E13A4FA87B538739A50D06F3 /* Pods_RudderOneTrusttvOS_RudderOneTrusttvOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RudderOneTrusttvOS_RudderOneTrusttvOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		029BDC1117314C7798770143 /* Pods_RudderOneTrusttvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RudderOneTrusttvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		06C21AFDD9F6C8A9A5F9E2A8 /* Pods-SampleObjCiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleObjCiOS.debug.xcconfig"; path = "Target Support Files/Pods-SampleObjCiOS/Pods-SampleObjCiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		07A0499112E4FC23B2E52CCA /* Pods_SampleObjCtvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleObjCtvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		367D4552CB42BEC4D039A064 /* Pods-RudderOneTrustiOS-RudderOneTrustiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RudderOneTrustiOS-RudderOneTrustiOSTests.release.xcconfig"; path = "Target Support Files/Pods-RudderOneTrustiOS-RudderOneTrustiOSTests/Pods-RudderOneTrustiOS-RudderOneTrustiOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		4B9796C318299CD9CFDF20A8 /* Pods-RudderOneTrustiOS-RudderOneTrustiOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RudderOneTrustiOS-RudderOneTrustiOSTests.debug.xcconfig"; path = "Target Support Files/Pods-RudderOneTrustiOS-RudderOneTrustiOSTests/Pods-RudderOneTrustiOS-RudderOneTrustiOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		53911C30C9D0EB8CF47DB9CC /* Pods-SampleSwifttvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleSwifttvOS.release.xcconfig"; path = "Target Support Files/Pods-SampleSwifttvOS/Pods-SampleSwifttvOS.release.xcconfig"; sourceTree = "<group>"; };
+		73D0E415330391E4F9FC4CAE /* Pods-SampleSwiftiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleSwiftiOS.debug.xcconfig"; path = "Target Support Files/Pods-SampleSwiftiOS/Pods-SampleSwiftiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		785B8BB10B459F295E1B40DF /* Pods-SampleSwiftiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleSwiftiOS.release.xcconfig"; path = "Target Support Files/Pods-SampleSwiftiOS/Pods-SampleSwiftiOS.release.xcconfig"; sourceTree = "<group>"; };
+		7E557FE025002ED99DB83573 /* Pods_SampleSwifttvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleSwifttvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8001CAAEDAF5B8775A414C3F /* Pods-SampleSwifttvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleSwifttvOS.debug.xcconfig"; path = "Target Support Files/Pods-SampleSwifttvOS/Pods-SampleSwifttvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		832A43BFE9A908CC5C17E46D /* Pods-RudderOneTrusttvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RudderOneTrusttvOS.release.xcconfig"; path = "Target Support Files/Pods-RudderOneTrusttvOS/Pods-RudderOneTrusttvOS.release.xcconfig"; sourceTree = "<group>"; };
+		87E0CA08B44ADF79993BFF6B /* Pods-SampleObjCtvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleObjCtvOS.release.xcconfig"; path = "Target Support Files/Pods-SampleObjCtvOS/Pods-SampleObjCtvOS.release.xcconfig"; sourceTree = "<group>"; };
+		8FD01D9C8668444CA7FB9787 /* Pods-SampleObjCiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleObjCiOS.release.xcconfig"; path = "Target Support Files/Pods-SampleObjCiOS/Pods-SampleObjCiOS.release.xcconfig"; sourceTree = "<group>"; };
+		90F5AC519E37D4F63CA024AC /* Pods_RudderOneTrusttvOS_RudderOneTrusttvOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RudderOneTrusttvOS_RudderOneTrusttvOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		975735FF9D6BEDE0F6E6462E /* Pods-SampleObjCtvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleObjCtvOS.debug.xcconfig"; path = "Target Support Files/Pods-SampleObjCtvOS/Pods-SampleObjCtvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		A22668A950C619EFA97239A3 /* Pods-RudderOneTrustiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RudderOneTrustiOS.release.xcconfig"; path = "Target Support Files/Pods-RudderOneTrustiOS/Pods-RudderOneTrustiOS.release.xcconfig"; sourceTree = "<group>"; };
+		AAD3F0AA645B79636F6D57D7 /* Pods_RudderOneTrustiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RudderOneTrustiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2ED81B26C3C53472C22DCAE /* Pods-RudderOneTrusttvOS-RudderOneTrusttvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RudderOneTrusttvOS-RudderOneTrusttvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-RudderOneTrusttvOS-RudderOneTrusttvOSTests/Pods-RudderOneTrusttvOS-RudderOneTrusttvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C89A1D5EF71C550A5250CA2E /* Pods_SampleObjCiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleObjCiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB20F77921B381BD30A59D68 /* Pods-RudderOneTrustiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RudderOneTrustiOS.debug.xcconfig"; path = "Target Support Files/Pods-RudderOneTrustiOS/Pods-RudderOneTrustiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		E345475DBA690581201A3FB6 /* Pods_RudderOneTrustiOS_RudderOneTrustiOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RudderOneTrustiOS_RudderOneTrustiOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED049F36297FE9460080A88D /* RudderOneTrustiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RudderOneTrustiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED049F38297FE9460080A88D /* RudderOneTrustiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RudderOneTrustiOS.h; sourceTree = "<group>"; };
 		ED049F42297FE95B0080A88D /* RudderOneTrusttvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RudderOneTrusttvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -202,6 +200,10 @@
 		ED7DFD7B298B936900ED5A8E /* sonar-project.properties */ = {isa = PBXFileReference; lastKnownFileType = text; name = "sonar-project.properties"; path = "../sonar-project.properties"; sourceTree = "<group>"; };
 		ED7DFD7C298B936900ED5A8E /* xccov-to-generic.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = "xccov-to-generic.sh"; path = "../xccov-to-generic.sh"; sourceTree = "<group>"; };
 		ED7DFD7D298B936900ED5A8E /* CODE_OF_CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = CODE_OF_CONDUCT.md; path = ../CODE_OF_CONDUCT.md; sourceTree = "<group>"; };
+		ED7DFD7E298BF88900ED5A8E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FC2A457515CCB95828114164 /* Pods-RudderOneTrusttvOS-RudderOneTrusttvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RudderOneTrusttvOS-RudderOneTrusttvOSTests.release.xcconfig"; path = "Target Support Files/Pods-RudderOneTrusttvOS-RudderOneTrusttvOSTests/Pods-RudderOneTrusttvOS-RudderOneTrusttvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		FD6A51C15CA3B19643FA54A4 /* Pods-RudderOneTrusttvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RudderOneTrusttvOS.debug.xcconfig"; path = "Target Support Files/Pods-RudderOneTrusttvOS/Pods-RudderOneTrusttvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		FD86DB4431F04CB92F007C99 /* Pods_SampleSwiftiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleSwiftiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,7 +211,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				573D2EEF4258E1E08EA94F61 /* Pods_RudderOneTrustiOS.framework in Frameworks */,
+				749B63EB192B95C9327E6A18 /* Pods_RudderOneTrustiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +219,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E214E1BE5BC038C331F8844 /* Pods_RudderOneTrusttvOS.framework in Frameworks */,
+				B92846E7C4C91A4B8077CD89 /* Pods_RudderOneTrusttvOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,7 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED04A1B1298015AC0080A88D /* RudderOneTrustiOS.framework in Frameworks */,
-				96A48464ADCB5772270F8DED /* Pods_RudderOneTrustiOS_RudderOneTrustiOSTests.framework in Frameworks */,
+				9C528E6B4F07C62A2CB9BD16 /* Pods_RudderOneTrustiOS_RudderOneTrustiOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,7 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED04A1C1298015CC0080A88D /* RudderOneTrusttvOS.framework in Frameworks */,
-				19F056CCAA9D5A77AE12F299 /* Pods_RudderOneTrusttvOS_RudderOneTrusttvOSTests.framework in Frameworks */,
+				48BC79A048FDB990D3747E00 /* Pods_RudderOneTrusttvOS_RudderOneTrusttvOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,7 +245,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66AF3BBE5218A5C50713A7F9 /* Pods_SampleSwiftiOS.framework in Frameworks */,
+				EEE8D57CCAD0C4AF34E54C29 /* Pods_SampleSwiftiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +253,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0145D22864740E75C0B50D9 /* Pods_SampleSwifttvOS.framework in Frameworks */,
+				EE2407F93778DB7AEAEF2807 /* Pods_SampleSwifttvOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +261,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B5CB3E7A559D4FEA0C19510 /* Pods_SampleObjCiOS.framework in Frameworks */,
+				FDDFFE9869ECD9DC20F7F107 /* Pods_SampleObjCiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,24 +269,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5E5BA292FC5E117EC13E81F /* Pods_SampleObjCtvOS.framework in Frameworks */,
+				D9D52637D2CA405C2E5889CC /* Pods_SampleObjCtvOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		01857619C73AF3C3CC3A7BA6 /* Frameworks */ = {
+		28BC423461AB623873839AAF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4205C83D4B6BA66EB72BED9F /* Pods_RudderOneTrustiOS.framework */,
-				46EBF6492D3C75D66BC8BD04 /* Pods_RudderOneTrustiOS_RudderOneTrustiOSTests.framework */,
-				CD55AEF6157C36144E0C8041 /* Pods_RudderOneTrusttvOS.framework */,
-				E13A4FA87B538739A50D06F3 /* Pods_RudderOneTrusttvOS_RudderOneTrusttvOSTests.framework */,
-				879AB53F774B3F18104A0A26 /* Pods_SampleObjCiOS.framework */,
-				48C9D9A3FC53D084C5774224 /* Pods_SampleObjCtvOS.framework */,
-				A5B646F19483CB2BD467BD1C /* Pods_SampleSwiftiOS.framework */,
-				77FA663E1B3D78C028024558 /* Pods_SampleSwifttvOS.framework */,
+				AAD3F0AA645B79636F6D57D7 /* Pods_RudderOneTrustiOS.framework */,
+				E345475DBA690581201A3FB6 /* Pods_RudderOneTrustiOS_RudderOneTrustiOSTests.framework */,
+				029BDC1117314C7798770143 /* Pods_RudderOneTrusttvOS.framework */,
+				90F5AC519E37D4F63CA024AC /* Pods_RudderOneTrusttvOS_RudderOneTrusttvOSTests.framework */,
+				C89A1D5EF71C550A5250CA2E /* Pods_SampleObjCiOS.framework */,
+				07A0499112E4FC23B2E52CCA /* Pods_SampleObjCtvOS.framework */,
+				FD86DB4431F04CB92F007C99 /* Pods_SampleSwiftiOS.framework */,
+				7E557FE025002ED99DB83573 /* Pods_SampleSwifttvOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -292,22 +294,22 @@
 		53741640C1AEAF47350D1B28 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				490E341BC0CB78FBC7E194FA /* Pods-RudderOneTrustiOS.debug.xcconfig */,
-				1BCD96DC3857C0C238D1354D /* Pods-RudderOneTrustiOS.release.xcconfig */,
-				9E0014856748BA4FFD207875 /* Pods-RudderOneTrustiOS-RudderOneTrustiOSTests.debug.xcconfig */,
-				4599DB7564B0BA5DF52D0ED8 /* Pods-RudderOneTrustiOS-RudderOneTrustiOSTests.release.xcconfig */,
-				219FE3696B8AD4EB6C17A1FF /* Pods-RudderOneTrusttvOS.debug.xcconfig */,
-				B4584F880FD4F0E0365CE04F /* Pods-RudderOneTrusttvOS.release.xcconfig */,
-				05082CA9470A98F4252710AC /* Pods-RudderOneTrusttvOS-RudderOneTrusttvOSTests.debug.xcconfig */,
-				0E7EB59F0CED35169CA579E8 /* Pods-RudderOneTrusttvOS-RudderOneTrusttvOSTests.release.xcconfig */,
-				B83622C8A8BE9855D03EE195 /* Pods-SampleObjCiOS.debug.xcconfig */,
-				DDA734B505D7CDFF65D53AB0 /* Pods-SampleObjCiOS.release.xcconfig */,
-				5C7DC7F6DAE37171DA4728D3 /* Pods-SampleObjCtvOS.debug.xcconfig */,
-				44F8B01D7496D60B4E5EEF6E /* Pods-SampleObjCtvOS.release.xcconfig */,
-				259EAB4F447DD22CFE1B8DAA /* Pods-SampleSwiftiOS.debug.xcconfig */,
-				BDED82D68F45A1068E953983 /* Pods-SampleSwiftiOS.release.xcconfig */,
-				144EA6B62D1611CDD48F1B90 /* Pods-SampleSwifttvOS.debug.xcconfig */,
-				7447CF5A8D25AFB1E7064E6A /* Pods-SampleSwifttvOS.release.xcconfig */,
+				CB20F77921B381BD30A59D68 /* Pods-RudderOneTrustiOS.debug.xcconfig */,
+				A22668A950C619EFA97239A3 /* Pods-RudderOneTrustiOS.release.xcconfig */,
+				4B9796C318299CD9CFDF20A8 /* Pods-RudderOneTrustiOS-RudderOneTrustiOSTests.debug.xcconfig */,
+				367D4552CB42BEC4D039A064 /* Pods-RudderOneTrustiOS-RudderOneTrustiOSTests.release.xcconfig */,
+				FD6A51C15CA3B19643FA54A4 /* Pods-RudderOneTrusttvOS.debug.xcconfig */,
+				832A43BFE9A908CC5C17E46D /* Pods-RudderOneTrusttvOS.release.xcconfig */,
+				C2ED81B26C3C53472C22DCAE /* Pods-RudderOneTrusttvOS-RudderOneTrusttvOSTests.debug.xcconfig */,
+				FC2A457515CCB95828114164 /* Pods-RudderOneTrusttvOS-RudderOneTrusttvOSTests.release.xcconfig */,
+				06C21AFDD9F6C8A9A5F9E2A8 /* Pods-SampleObjCiOS.debug.xcconfig */,
+				8FD01D9C8668444CA7FB9787 /* Pods-SampleObjCiOS.release.xcconfig */,
+				975735FF9D6BEDE0F6E6462E /* Pods-SampleObjCtvOS.debug.xcconfig */,
+				87E0CA08B44ADF79993BFF6B /* Pods-SampleObjCtvOS.release.xcconfig */,
+				73D0E415330391E4F9FC4CAE /* Pods-SampleSwiftiOS.debug.xcconfig */,
+				785B8BB10B459F295E1B40DF /* Pods-SampleSwiftiOS.release.xcconfig */,
+				8001CAAEDAF5B8775A414C3F /* Pods-SampleSwifttvOS.debug.xcconfig */,
+				53911C30C9D0EB8CF47DB9CC /* Pods-SampleSwifttvOS.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -327,7 +329,7 @@
 				ED04A2D42987C25B0080A88D /* SampleObjCtvOS */,
 				ED049F28297FE8BE0080A88D /* Products */,
 				53741640C1AEAF47350D1B28 /* Pods */,
-				01857619C73AF3C3CC3A7BA6 /* Frameworks */,
+				28BC423461AB623873839AAF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -414,6 +416,7 @@
 		ED04A1D0298022720080A88D /* SampleSwiftiOS */ = {
 			isa = PBXGroup;
 			children = (
+				ED7DFD7E298BF88900ED5A8E /* GoogleService-Info.plist */,
 				ED04A1D1298022720080A88D /* AppDelegate.swift */,
 				ED04A1D3298022720080A88D /* SceneDelegate.swift */,
 				ED04A1D5298022720080A88D /* ViewController.swift */,
@@ -572,7 +575,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED049F3A297FE9460080A88D /* Build configuration list for PBXNativeTarget "RudderOneTrustiOS" */;
 			buildPhases = (
-				931452C7C565206F1B9B2366 /* [CP] Check Pods Manifest.lock */,
+				569E4813B9E219249240795E /* [CP] Check Pods Manifest.lock */,
 				ED049F31297FE9460080A88D /* Headers */,
 				ED049F32297FE9460080A88D /* Sources */,
 				ED049F33297FE9460080A88D /* Frameworks */,
@@ -591,7 +594,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED049F46297FE95B0080A88D /* Build configuration list for PBXNativeTarget "RudderOneTrusttvOS" */;
 			buildPhases = (
-				286F2867758C00FB957F02D1 /* [CP] Check Pods Manifest.lock */,
+				447E7AB107497D265343D784 /* [CP] Check Pods Manifest.lock */,
 				ED049F3D297FE95B0080A88D /* Headers */,
 				ED049F3E297FE95B0080A88D /* Sources */,
 				ED049F3F297FE95B0080A88D /* Frameworks */,
@@ -610,11 +613,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED04A1B4298015AC0080A88D /* Build configuration list for PBXNativeTarget "RudderOneTrustiOSTests" */;
 			buildPhases = (
-				79151B7D4F586AD7778094A0 /* [CP] Check Pods Manifest.lock */,
+				F1DBC4643A59AC36316B7754 /* [CP] Check Pods Manifest.lock */,
 				ED04A1A9298015AC0080A88D /* Sources */,
 				ED04A1AA298015AC0080A88D /* Frameworks */,
 				ED04A1AB298015AC0080A88D /* Resources */,
-				853F7B0A89FF4AD79B49C65A /* [CP] Embed Pods Frameworks */,
+				B20756218DA5C14053A70426 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -630,11 +633,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED04A1C4298015CC0080A88D /* Build configuration list for PBXNativeTarget "RudderOneTrusttvOSTests" */;
 			buildPhases = (
-				4952AA137FB1D18BF66C021F /* [CP] Check Pods Manifest.lock */,
+				B677367A3A25A89E05E97D30 /* [CP] Check Pods Manifest.lock */,
 				ED04A1B9298015CC0080A88D /* Sources */,
 				ED04A1BA298015CC0080A88D /* Frameworks */,
 				ED04A1BB298015CC0080A88D /* Resources */,
-				E10C83344A97989CECAE521C /* [CP] Embed Pods Frameworks */,
+				D3B2F5BF6A0419A91ECA6867 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -650,11 +653,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED04A1E0298022740080A88D /* Build configuration list for PBXNativeTarget "SampleSwiftiOS" */;
 			buildPhases = (
-				10F234EB0724BE2945DFE02B /* [CP] Check Pods Manifest.lock */,
+				97892C662B2CB23E58CAF002 /* [CP] Check Pods Manifest.lock */,
 				ED04A1CB298022720080A88D /* Sources */,
 				ED04A1CC298022720080A88D /* Frameworks */,
 				ED04A1CD298022720080A88D /* Resources */,
-				5DC92B667DEFF2A6C5144AD1 /* [CP] Embed Pods Frameworks */,
+				1C479A2FAC3870259BD4D788 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -669,11 +672,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED04A1F5298022B60080A88D /* Build configuration list for PBXNativeTarget "SampleSwifttvOS" */;
 			buildPhases = (
-				8B237150C803E8A054A4ED52 /* [CP] Check Pods Manifest.lock */,
+				5E6A296A3F9D039A57425BB4 /* [CP] Check Pods Manifest.lock */,
 				ED04A1E3298022B50080A88D /* Sources */,
 				ED04A1E4298022B50080A88D /* Frameworks */,
 				ED04A1E5298022B50080A88D /* Resources */,
-				D09960C8E84F0B66D75F49E4 /* [CP] Embed Pods Frameworks */,
+				8127D7A837849C0E7E252E07 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -688,11 +691,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED04A2CE2987C24C0080A88D /* Build configuration list for PBXNativeTarget "SampleObjCiOS" */;
 			buildPhases = (
-				62219AE01450A4183CAF708B /* [CP] Check Pods Manifest.lock */,
+				4A4E7D8AEC369EA38B50C488 /* [CP] Check Pods Manifest.lock */,
 				ED04A2B22987C24B0080A88D /* Sources */,
 				ED04A2B32987C24B0080A88D /* Frameworks */,
 				ED04A2B42987C24B0080A88D /* Resources */,
-				9A079C4DF5736A3125112F1E /* [CP] Embed Pods Frameworks */,
+				099DE3C577E05C280F034D3E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -707,11 +710,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED04A2E52987C25C0080A88D /* Build configuration list for PBXNativeTarget "SampleObjCtvOS" */;
 			buildPhases = (
-				9499E40714E49D1DD63BE9D2 /* [CP] Check Pods Manifest.lock */,
+				541D19F88EFC06CA9EB7B172 /* [CP] Check Pods Manifest.lock */,
 				ED04A2CF2987C25B0080A88D /* Sources */,
 				ED04A2D02987C25B0080A88D /* Frameworks */,
 				ED04A2D12987C25B0080A88D /* Resources */,
-				149327F62B005580C660B25D /* [CP] Embed Pods Frameworks */,
+				5AF53D82F27D000B0240AF15 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -826,6 +829,7 @@
 			files = (
 				ED04A23229827AB10080A88D /* RudderConfig.plist in Resources */,
 				ED04A1DE298022740080A88D /* LaunchScreen.storyboard in Resources */,
+				ED7DFD7F298BF88900ED5A8E /* GoogleService-Info.plist in Resources */,
 				ED04A1DB298022740080A88D /* Assets.xcassets in Resources */,
 				ED04A1D9298022720080A88D /* Main.storyboard in Resources */,
 			);
@@ -865,46 +869,41 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		10F234EB0724BE2945DFE02B /* [CP] Check Pods Manifest.lock */ = {
+		099DE3C577E05C280F034D3E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SampleSwiftiOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		149327F62B005580C660B25D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SampleObjCtvOS/Pods-SampleObjCtvOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SampleObjCiOS/Pods-SampleObjCiOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SampleObjCtvOS/Pods-SampleObjCtvOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SampleObjCiOS/Pods-SampleObjCiOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SampleObjCtvOS/Pods-SampleObjCtvOS-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SampleObjCiOS/Pods-SampleObjCiOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		286F2867758C00FB957F02D1 /* [CP] Check Pods Manifest.lock */ = {
+		1C479A2FAC3870259BD4D788 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SampleSwiftiOS/Pods-SampleSwiftiOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SampleSwiftiOS/Pods-SampleSwiftiOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SampleSwiftiOS/Pods-SampleSwiftiOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		447E7AB107497D265343D784 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -926,46 +925,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4952AA137FB1D18BF66C021F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RudderOneTrusttvOS-RudderOneTrusttvOSTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5DC92B667DEFF2A6C5144AD1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SampleSwiftiOS/Pods-SampleSwiftiOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SampleSwiftiOS/Pods-SampleSwiftiOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SampleSwiftiOS/Pods-SampleSwiftiOS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		62219AE01450A4183CAF708B /* [CP] Check Pods Manifest.lock */ = {
+		4A4E7D8AEC369EA38B50C488 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -987,90 +947,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		79151B7D4F586AD7778094A0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RudderOneTrustiOS-RudderOneTrustiOSTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		853F7B0A89FF4AD79B49C65A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RudderOneTrustiOS-RudderOneTrustiOSTests/Pods-RudderOneTrustiOS-RudderOneTrustiOSTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RudderOneTrustiOS-RudderOneTrustiOSTests/Pods-RudderOneTrustiOS-RudderOneTrustiOSTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RudderOneTrustiOS-RudderOneTrustiOSTests/Pods-RudderOneTrustiOS-RudderOneTrustiOSTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8B237150C803E8A054A4ED52 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SampleSwifttvOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		931452C7C565206F1B9B2366 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RudderOneTrustiOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9499E40714E49D1DD63BE9D2 /* [CP] Check Pods Manifest.lock */ = {
+		541D19F88EFC06CA9EB7B172 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1092,24 +969,68 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9A079C4DF5736A3125112F1E /* [CP] Embed Pods Frameworks */ = {
+		569E4813B9E219249240795E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SampleObjCiOS/Pods-SampleObjCiOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SampleObjCiOS/Pods-SampleObjCiOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RudderOneTrustiOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SampleObjCiOS/Pods-SampleObjCiOS-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D09960C8E84F0B66D75F49E4 /* [CP] Embed Pods Frameworks */ = {
+		5AF53D82F27D000B0240AF15 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SampleObjCtvOS/Pods-SampleObjCtvOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SampleObjCtvOS/Pods-SampleObjCtvOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SampleObjCtvOS/Pods-SampleObjCtvOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E6A296A3F9D039A57425BB4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SampleSwifttvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8127D7A837849C0E7E252E07 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1126,7 +1047,68 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SampleSwifttvOS/Pods-SampleSwifttvOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E10C83344A97989CECAE521C /* [CP] Embed Pods Frameworks */ = {
+		97892C662B2CB23E58CAF002 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SampleSwiftiOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B20756218DA5C14053A70426 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RudderOneTrustiOS-RudderOneTrustiOSTests/Pods-RudderOneTrustiOS-RudderOneTrustiOSTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RudderOneTrustiOS-RudderOneTrustiOSTests/Pods-RudderOneTrustiOS-RudderOneTrustiOSTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RudderOneTrustiOS-RudderOneTrustiOSTests/Pods-RudderOneTrustiOS-RudderOneTrustiOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B677367A3A25A89E05E97D30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RudderOneTrusttvOS-RudderOneTrusttvOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3B2F5BF6A0419A91ECA6867 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1141,6 +1123,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RudderOneTrusttvOS-RudderOneTrusttvOSTests/Pods-RudderOneTrusttvOS-RudderOneTrusttvOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1DBC4643A59AC36316B7754 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RudderOneTrustiOS-RudderOneTrustiOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1445,7 +1449,7 @@
 		};
 		ED049F3B297FE9460080A88D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 490E341BC0CB78FBC7E194FA /* Pods-RudderOneTrustiOS.debug.xcconfig */;
+			baseConfigurationReference = CB20F77921B381BD30A59D68 /* Pods-RudderOneTrustiOS.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				CODE_SIGN_STYLE = Automatic;
@@ -1454,6 +1458,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1476,7 +1481,7 @@
 		};
 		ED049F3C297FE9460080A88D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1BCD96DC3857C0C238D1354D /* Pods-RudderOneTrustiOS.release.xcconfig */;
+			baseConfigurationReference = A22668A950C619EFA97239A3 /* Pods-RudderOneTrustiOS.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				CODE_SIGN_STYLE = Automatic;
@@ -1507,7 +1512,7 @@
 		};
 		ED049F47297FE95B0080A88D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 219FE3696B8AD4EB6C17A1FF /* Pods-RudderOneTrusttvOS.debug.xcconfig */;
+			baseConfigurationReference = FD6A51C15CA3B19643FA54A4 /* Pods-RudderOneTrusttvOS.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1537,7 +1542,7 @@
 		};
 		ED049F48297FE95B0080A88D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B4584F880FD4F0E0365CE04F /* Pods-RudderOneTrusttvOS.release.xcconfig */;
+			baseConfigurationReference = 832A43BFE9A908CC5C17E46D /* Pods-RudderOneTrusttvOS.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1567,7 +1572,7 @@
 		};
 		ED04A1B5298015AC0080A88D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E0014856748BA4FFD207875 /* Pods-RudderOneTrustiOS-RudderOneTrustiOSTests.debug.xcconfig */;
+			baseConfigurationReference = 4B9796C318299CD9CFDF20A8 /* Pods-RudderOneTrustiOS-RudderOneTrustiOSTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1583,7 +1588,7 @@
 		};
 		ED04A1B6298015AC0080A88D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4599DB7564B0BA5DF52D0ED8 /* Pods-RudderOneTrustiOS-RudderOneTrustiOSTests.release.xcconfig */;
+			baseConfigurationReference = 367D4552CB42BEC4D039A064 /* Pods-RudderOneTrustiOS-RudderOneTrustiOSTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1599,7 +1604,7 @@
 		};
 		ED04A1C5298015CC0080A88D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 05082CA9470A98F4252710AC /* Pods-RudderOneTrusttvOS-RudderOneTrusttvOSTests.debug.xcconfig */;
+			baseConfigurationReference = C2ED81B26C3C53472C22DCAE /* Pods-RudderOneTrusttvOS-RudderOneTrusttvOSTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1617,7 +1622,7 @@
 		};
 		ED04A1C6298015CC0080A88D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E7EB59F0CED35169CA579E8 /* Pods-RudderOneTrusttvOS-RudderOneTrusttvOSTests.release.xcconfig */;
+			baseConfigurationReference = FC2A457515CCB95828114164 /* Pods-RudderOneTrusttvOS-RudderOneTrusttvOSTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1635,7 +1640,7 @@
 		};
 		ED04A1E1298022740080A88D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 259EAB4F447DD22CFE1B8DAA /* Pods-SampleSwiftiOS.debug.xcconfig */;
+			baseConfigurationReference = 73D0E415330391E4F9FC4CAE /* Pods-SampleSwiftiOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1664,7 +1669,7 @@
 		};
 		ED04A1E2298022740080A88D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BDED82D68F45A1068E953983 /* Pods-SampleSwiftiOS.release.xcconfig */;
+			baseConfigurationReference = 785B8BB10B459F295E1B40DF /* Pods-SampleSwiftiOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1693,7 +1698,7 @@
 		};
 		ED04A1F6298022B60080A88D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 144EA6B62D1611CDD48F1B90 /* Pods-SampleSwifttvOS.debug.xcconfig */;
+			baseConfigurationReference = 8001CAAEDAF5B8775A414C3F /* Pods-SampleSwifttvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1720,7 +1725,7 @@
 		};
 		ED04A1F7298022B60080A88D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7447CF5A8D25AFB1E7064E6A /* Pods-SampleSwifttvOS.release.xcconfig */;
+			baseConfigurationReference = 53911C30C9D0EB8CF47DB9CC /* Pods-SampleSwifttvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1747,7 +1752,7 @@
 		};
 		ED04A2CC2987C24C0080A88D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B83622C8A8BE9855D03EE195 /* Pods-SampleObjCiOS.debug.xcconfig */;
+			baseConfigurationReference = 06C21AFDD9F6C8A9A5F9E2A8 /* Pods-SampleObjCiOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1778,7 +1783,7 @@
 		};
 		ED04A2CD2987C24C0080A88D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DDA734B505D7CDFF65D53AB0 /* Pods-SampleObjCiOS.release.xcconfig */;
+			baseConfigurationReference = 8FD01D9C8668444CA7FB9787 /* Pods-SampleObjCiOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1808,7 +1813,7 @@
 		};
 		ED04A2E62987C25C0080A88D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C7DC7F6DAE37171DA4728D3 /* Pods-SampleObjCtvOS.debug.xcconfig */;
+			baseConfigurationReference = 975735FF9D6BEDE0F6E6462E /* Pods-SampleObjCtvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1838,7 +1843,7 @@
 		};
 		ED04A2E72987C25C0080A88D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 44F8B01D7496D60B4E5EEF6E /* Pods-SampleObjCtvOS.release.xcconfig */;
+			baseConfigurationReference = 87E0CA08B44ADF79993BFF6B /* Pods-SampleObjCtvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

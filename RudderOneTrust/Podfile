@@ -28,6 +28,11 @@ end
 target 'SampleSwiftiOS' do
     platform :ios, '11.0'
     pod 'RudderOneTrust', :path => '../'
+    pod 'Rudder-Adjust'
+    pod 'Rudder-Appsflyer', :git => 'https://github.com/rudderlabs/rudder-integration-appsflyer-ios.git', :commit => '7590be8a0ed5110659faaf4514111bd7cdce909e'
+    pod 'Rudder-Facebook'
+    pod 'Rudder-Firebase'
+    pod 'Rudder-Braze'
 end
 
 target 'SampleSwifttvOS' do
