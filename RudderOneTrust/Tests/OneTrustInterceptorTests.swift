@@ -44,8 +44,9 @@ final class OneTrustInterceptorTests: XCTestCase {
         // When
         oneTrustInterceptor.interceptorModel = OneTrustInterceptorModel(oneTrustSDK: TestSDK())
         let serverConfig = testUtils.getServerConfig(forResource: "test-some-destination-has-category", ofType: "json")
+        XCTAssertNotNil(serverConfig)
         let message = testUtils.buildTrackMessage("Test Track")
-        let updatedMessage = oneTrustInterceptor.intercept(withServerConfig: serverConfig, andMessage: message)
+        let updatedMessage = oneTrustInterceptor.intercept(withServerConfig: serverConfig!, andMessage: message)
         
         // Then
         XCTAssertEqual(updatedMessage.integrations, expected)
@@ -61,10 +62,11 @@ final class OneTrustInterceptorTests: XCTestCase {
         // When
         oneTrustInterceptor.interceptorModel = OneTrustInterceptorModel(oneTrustSDK: TestSDK())
         let serverConfig = testUtils.getServerConfig(forResource: "test-some-destination-has-category", ofType: "json")
+        XCTAssertNotNil(serverConfig)
         let options = RSOption()
         options.putIntegration("Amplitude", isEnabled: true)
         let message = testUtils.buildTrackMessage("Test Track", options: options)
-        let updatedMessage = oneTrustInterceptor.intercept(withServerConfig: serverConfig, andMessage: message)
+        let updatedMessage = oneTrustInterceptor.intercept(withServerConfig: serverConfig!, andMessage: message)
         
         // Then
         XCTAssertEqual(updatedMessage.integrations, expected)
@@ -79,8 +81,9 @@ final class OneTrustInterceptorTests: XCTestCase {
         // When
         oneTrustInterceptor.interceptorModel = OneTrustInterceptorModel(oneTrustSDK: TestSDK())
         let serverConfig = testUtils.getServerConfig(forResource: "test-destination-has-no-category", ofType: "json")
+        XCTAssertNotNil(serverConfig)
         let message = testUtils.buildTrackMessage("Test Track")
-        let updatedMessage = oneTrustInterceptor.intercept(withServerConfig: serverConfig, andMessage: message)
+        let updatedMessage = oneTrustInterceptor.intercept(withServerConfig: serverConfig!, andMessage: message)
         
         // Then
         XCTAssertEqual(updatedMessage.integrations, expected)
@@ -95,10 +98,11 @@ final class OneTrustInterceptorTests: XCTestCase {
         // When
         oneTrustInterceptor.interceptorModel = OneTrustInterceptorModel(oneTrustSDK: TestSDK())
         let serverConfig = testUtils.getServerConfig(forResource: "test-destination-has-no-category", ofType: "json")
+        XCTAssertNotNil(serverConfig)
         let options = RSOption()
         options.putIntegration("Amplitude", isEnabled: true)
         let message = testUtils.buildTrackMessage("Test Track", options: options)
-        let updatedMessage = oneTrustInterceptor.intercept(withServerConfig: serverConfig, andMessage: message)
+        let updatedMessage = oneTrustInterceptor.intercept(withServerConfig: serverConfig!, andMessage: message)
         
         // Then
         XCTAssertEqual(updatedMessage.integrations, expected)
@@ -115,8 +119,9 @@ final class OneTrustInterceptorTests: XCTestCase {
         // When
         oneTrustInterceptor.interceptorModel = OneTrustInterceptorModel(oneTrustSDK: TestSDK())
         let serverConfig = testUtils.getServerConfig(forResource: "test-all-destination-has-category", ofType: "json")
+        XCTAssertNotNil(serverConfig)
         let message = testUtils.buildTrackMessage("Test Track")
-        let updatedMessage = oneTrustInterceptor.intercept(withServerConfig: serverConfig, andMessage: message)
+        let updatedMessage = oneTrustInterceptor.intercept(withServerConfig: serverConfig!, andMessage: message)
         
         // Then
         XCTAssertEqual(updatedMessage.integrations, expected)
@@ -132,10 +137,11 @@ final class OneTrustInterceptorTests: XCTestCase {
         // When
         oneTrustInterceptor.interceptorModel = OneTrustInterceptorModel(oneTrustSDK: TestSDK())
         let serverConfig = testUtils.getServerConfig(forResource: "test-all-destination-has-category", ofType: "json")
+        XCTAssertNotNil(serverConfig)
         let options = RSOption()
         options.putIntegration("Amplitude", isEnabled: true)
         let message = testUtils.buildTrackMessage("Test Track", options: options)
-        let updatedMessage = oneTrustInterceptor.intercept(withServerConfig: serverConfig, andMessage: message)
+        let updatedMessage = oneTrustInterceptor.intercept(withServerConfig: serverConfig!, andMessage: message)
         
         // Then
         XCTAssertEqual(updatedMessage.integrations, expected)

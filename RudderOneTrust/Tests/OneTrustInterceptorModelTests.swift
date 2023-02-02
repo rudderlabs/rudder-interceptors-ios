@@ -31,10 +31,11 @@ final class OneTrustInterceptorModelTests: XCTestCase {
     func test_getIntegration() {
         let testUtils = TestUtils()
         let serverConfig = testUtils.getServerConfig(forResource: "test-some-destination-has-category", ofType: "json")
-        XCTAssertNotNil(serverConfig.destinations)
-        XCTAssertTrue(serverConfig.destinations is [RSServerDestination])
+        XCTAssertNotNil(serverConfig)
+        XCTAssertNotNil(serverConfig!.destinations)
+        XCTAssertTrue(serverConfig!.destinations is [RSServerDestination])
         
-        let destinations = serverConfig.destinations as! [RSServerDestination]
+        let destinations = serverConfig!.destinations as! [RSServerDestination]
         XCTAssertTrue(!destinations.isEmpty)
                 
         oneTrustInterceptorModel.fetchCategoryList()

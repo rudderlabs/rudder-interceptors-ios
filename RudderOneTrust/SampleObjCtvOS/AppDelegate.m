@@ -30,6 +30,7 @@
                     RSConfigBuilder *builder = [[RSConfigBuilder alloc] init];
                     [builder withLoglevel:RSLogLevelDebug];
                     [builder withDataPlaneUrl:rudderConfig.DEV_DATA_PLANE_URL];
+                    [builder withControlPlaneUrl:rudderConfig.DEV_CONTROL_PLANE_URL];
                     [builder withConsentInterceptor:[[OneTrustInterceptor alloc] init]];
                     
                     [RSClient getInstance:rudderConfig.WRITE_KEY config:builder.build];

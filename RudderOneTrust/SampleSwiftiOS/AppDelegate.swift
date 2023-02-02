@@ -26,6 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return true
         }
         
+        // It is recommended to initialise Rudder SDK after successful initialisation of OTPublishersHeadlessSDK
         OTPublishersHeadlessSDK.shared.startSDK(
             storageLocation: rudderConfig.STORAGE_LOCATION,
             domainIdentifier: rudderConfig.DOMAIN_IDENTIFIER,

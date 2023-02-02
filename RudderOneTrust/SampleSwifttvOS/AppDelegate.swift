@@ -32,9 +32,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             if response.status {
                 let builder: RSConfigBuilder = RSConfigBuilder()
                     .withLoglevel(RSLogLevelDebug)
-//                    .withDataPlaneUrl(rudderConfig.DEV_DATA_PLANE_URL)
-//                    .withControlPlaneUrl(rudderConfig.DEV_CONTROL_PLANE_URL)
-                    .withConsent(OneTrustInterceptor())
+                    .withDataPlaneUrl(rudderConfig.DEV_DATA_PLANE_URL)
+                    .withControlPlaneUrl(rudderConfig.DEV_CONTROL_PLANE_URL)
+                    .withConsentInterceptor(OneTrustInterceptor())
                 
                 let option = RSOption()
                 option.putIntegration("Firebase", isEnabled: true)

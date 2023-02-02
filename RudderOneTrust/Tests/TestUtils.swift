@@ -17,7 +17,7 @@ internal final class TestUtils {
         RSServerConfigManager("WRITE_KEY", rudderConfig: rudderConfig)
     }
     
-    func getServerConfig(forResource: String, ofType: String) -> RSServerConfigSource {
+    func getServerConfig(forResource: String, ofType: String) -> RSServerConfigSource? {
         let jsonString = getJSONString(forResource: forResource, ofType: ofType)
         return serverConfigManager._parseConfig(jsonString)
     }
@@ -47,7 +47,7 @@ internal final class TestUtils {
         }
     }
     
-    func getServerConfigFromJSON(_ writeKey: String, rudderConfig: RSConfig, jsonString: String) -> RSServerConfigSource {
+    func getServerConfigFromJSON(_ writeKey: String, rudderConfig: RSConfig, jsonString: String) -> RSServerConfigSource? {
         let serverConfigManager = RSServerConfigManager(writeKey, rudderConfig: rudderConfig)
         return serverConfigManager._parseConfig(jsonString)
     }
