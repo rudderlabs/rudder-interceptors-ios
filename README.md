@@ -165,7 +165,7 @@ OTPublishersHeadlessSDK.shared.startSDK(
 }
 ```
 
-| Important: Make sure you load the SDK only after the user provides their consent. |
+| Important: Make sure you load the SDK only after initializing the OneTrust SDK successfully. |
 | :----|
 
 ## License
