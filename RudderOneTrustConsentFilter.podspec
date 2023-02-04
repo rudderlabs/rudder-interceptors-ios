@@ -3,8 +3,8 @@ require 'json'
 package = JSON.parse(File.read(File.join(__dir__, 'package.json')))
 
 Pod::Spec.new do |s|
-  s.name             = 'RudderOneTrust'
-  s.module_name      = 'RudderOneTrust'
+  s.name             = 'RudderOneTrustConsentFilter'
+  s.module_name      = 'RudderOneTrustConsentFilter'
   s.version          = package['onetrust_version']
   s.summary          = "Privacy and Security focused Segment-alternative. iOS, tvOS, watchOS & macOS SDK"
   s.description      = <<-DESC
@@ -29,5 +29,5 @@ Pod::Spec.new do |s|
   s.ios.dependency 'OneTrust-CMP-XCFramework', '202212.1.0'
   s.tvos.dependency 'OneTrust-CMP-tvOS-XCFramework', '202212.1.0'
   
-  s.dependency 'Rudder', '~> 1.8.0'
+  s.dependency 'Rudder', '~> 1.9'
 end

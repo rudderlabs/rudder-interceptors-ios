@@ -9,7 +9,7 @@
 #import "SampleObjCtvOS-Swift.h"
 #import "Rudder.h"
 
-@import RudderOneTrust;
+@import RudderOneTrustConsentFilter;
 @import OTPublishersHeadlessSDKtvOS;
 
 @interface AppDelegate ()
@@ -31,9 +31,8 @@
                     [builder withLoglevel:RSLogLevelDebug];
                     [builder withDataPlaneUrl:rudderConfig.DEV_DATA_PLANE_URL];
                     [builder withControlPlaneUrl:rudderConfig.DEV_CONTROL_PLANE_URL];
-                    [builder withConsentInterceptor:[[OneTrustInterceptor alloc] init]];
                     
-                    [RSClient getInstance:rudderConfig.WRITE_KEY config:builder.build];
+                    [RSClient getInstance:rudderConfig.WRITE_KEY config:builder.build options:nil consentFilter:[[RudderOneTrustConsentFilter alloc] init]];
                 }
             }];
         }

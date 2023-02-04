@@ -8,7 +8,7 @@
 import UIKit
 import OTPublishersHeadlessSDKtvOS
 import Rudder
-import RudderOneTrust
+import RudderOneTrustConsentFilter
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -34,13 +34,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     .withLoglevel(RSLogLevelDebug)
                     .withDataPlaneUrl(rudderConfig.DEV_DATA_PLANE_URL)
                     .withControlPlaneUrl(rudderConfig.DEV_CONTROL_PLANE_URL)
-                    .withConsentInterceptor(OneTrustInterceptor())
                 
                 let option = RSOption()
                 option.putIntegration("Firebase", isEnabled: true)
                 option.putIntegration("Adroll", isEnabled: true)
                 option.putIntegration("All", isEnabled: true)
-                RSClient.getInstance(rudderConfig.WRITE_KEY, config: builder.build())
+                RSClient.getInstance(rudderConfig.WRITE_KEY, config: builder.build(), options: option, consentFilter: RudderOneTrustConsentFilter())
             }
         }
         return true

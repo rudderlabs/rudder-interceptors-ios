@@ -8,7 +8,7 @@
 import UIKit
 import OTPublishersHeadlessSDK
 import Rudder
-import RudderOneTrust
+import RudderOneTrustConsentFilter
 import Rudder_Braze
 import Rudder_Adjust
 import Rudder_Facebook
@@ -35,9 +35,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             if response.status {
                 let builder: RSConfigBuilder = RSConfigBuilder()
                     .withLoglevel(RSLogLevelDebug)
-                    .withDataPlaneUrl(rudderConfig.DEV_DATA_PLANE_URL)
+                    .withDataPlaneUrl(rudderConfig.LOCAL_DATA_PLANE_URL)
                     .withControlPlaneUrl(rudderConfig.DEV_CONTROL_PLANE_URL)
-                    .withConsentInterceptor(OneTrustInterceptor())
                     .withFactory(RudderBrazeFactory.instance())
                     .withFactory(RudderAdjustFactory.instance())
                     .withFactory(RudderFacebookFactory.instance())
@@ -48,7 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 option.putIntegration("Firebase", isEnabled: true)
                 option.putIntegration("Braze", isEnabled: true)
                 option.putIntegration("AppsFlyer", isEnabled: false)
-                RSClient.getInstance(rudderConfig.WRITE_KEY, config: builder.build(), options: option)
+                RSClient.getInstance(rudderConfig.WRITE_KEY, config: builder.build(), options: option, consentFilter: RudderOneTrustConsentFilter())
             }
         }
         return true

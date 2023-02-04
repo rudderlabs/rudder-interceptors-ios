@@ -27,7 +27,7 @@ end
 
 target 'SampleSwiftiOS' do
     platform :ios, '11.0'
-    pod 'RudderOneTrust', :path => '../'
+    pod 'RudderOneTrustConsentFilter', :path => '../'
     pod 'Rudder-Adjust'
     pod 'Rudder-Appsflyer', :git => 'https://github.com/rudderlabs/rudder-integration-appsflyer-ios.git', :commit => '7590be8a0ed5110659faaf4514111bd7cdce909e'
     pod 'Rudder-Facebook'
@@ -37,15 +37,15 @@ end
 
 target 'SampleSwifttvOS' do
     platform :tvos, '11.0'
-    pod 'RudderOneTrust', :path => '../'
+    pod 'RudderOneTrustConsentFilter', :path => '../'
 end
 
 target 'SampleObjCiOS' do
     platform :ios, '11.0'
-    pod 'RudderOneTrust', :path => '../'
+    pod 'RudderOneTrustConsentFilter', :path => '../'
 end
 
 target 'SampleObjCtvOS' do
     platform :tvos, '11.0'
-    pod 'RudderOneTrust', :path => '../'
+    pod 'RudderOneTrustConsentFilter', :path => '../'
 end
