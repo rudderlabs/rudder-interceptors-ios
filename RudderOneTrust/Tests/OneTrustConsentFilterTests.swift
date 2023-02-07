@@ -135,7 +135,8 @@ final class OneTrustConsentFilterTests: XCTestCase {
         // Given
         let expected: [String: NSNumber] = [
             "Amplitude": NSNumber(booleanLiteral: false),
-            "Google Analytics": NSNumber(booleanLiteral: false)
+            "Google Analytics": NSNumber(booleanLiteral: false),
+            "Adroll": NSNumber(booleanLiteral: true)
         ]
         
         // When
@@ -168,7 +169,9 @@ final class OneTrustConsentFilterTests: XCTestCase {
         // Given
         let expected: [String: NSNumber] = [
             "Amplitude": NSNumber(booleanLiteral: false),
-            "Google Analytics": NSNumber(booleanLiteral: false)
+            "Google Analytics": NSNumber(booleanLiteral: false),
+            "Appcues": NSNumber(booleanLiteral: true),
+            "Adroll": NSNumber(booleanLiteral: true)
         ]
         
         // When

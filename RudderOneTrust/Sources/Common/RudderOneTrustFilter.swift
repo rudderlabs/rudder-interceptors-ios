@@ -68,10 +68,7 @@ extension RudderOneTrustConsentFilter {
                 }
             }
         }
-        /// no need to add the true ones
-        if !isEnabled {
-            integration[destination.destinationDefinition.displayName] = NSNumber(booleanLiteral: isEnabled)
-        }
+        integration[destination.destinationDefinition.displayName] = NSNumber(booleanLiteral: isEnabled)
         return integration
     }
     
