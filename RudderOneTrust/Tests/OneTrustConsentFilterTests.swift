@@ -68,7 +68,7 @@ final class OneTrustConsentFilterTests: XCTestCase {
         XCTAssertNotNil(integration)
         XCTAssertNotNil(destination?.destinationDefinition.displayName)
         
-        let value = integration![destination!.destinationDefinition.displayName]
+        let value = integration[destination!.destinationDefinition.displayName]
         XCTAssertNotNil(value)
         
         XCTAssertEqual(value!, expected)
@@ -136,6 +136,7 @@ final class OneTrustConsentFilterTests: XCTestCase {
         let expected: [String: NSNumber] = [
             "Amplitude": NSNumber(booleanLiteral: false),
             "Google Analytics": NSNumber(booleanLiteral: false),
+            "Appcues": NSNumber(booleanLiteral: true),
             "Adroll": NSNumber(booleanLiteral: true)
         ]
         
@@ -152,7 +153,12 @@ final class OneTrustConsentFilterTests: XCTestCase {
         
     func testDestinationHasNoCategory() {
         // Given
-        let expected: [String: NSNumber]? = nil
+        let expected: [String: NSNumber] = [
+            "Amplitude": NSNumber(booleanLiteral: true),
+            "Google Analytics": NSNumber(booleanLiteral: true),
+            "Appcues": NSNumber(booleanLiteral: true),
+            "Adroll": NSNumber(booleanLiteral: true)
+        ]
         
         // When
         let oneTrustConsentFilter = RudderOneTrustConsentFilter(oneTrustSDK: oneTrustSDK)

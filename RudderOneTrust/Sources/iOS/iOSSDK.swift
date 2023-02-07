@@ -19,6 +19,6 @@ class iOSSDK: OneTrustSDK {
     }
     
     func getConsentStatus(forCategoryId: String) -> Bool {
-        return (OTPublishersHeadlessSDK.shared.getConsentStatus(forCategory: forCategoryId) == 1)
+        return (OTPublishersHeadlessSDK.shared.getConsentStatus(forCategory: forCategoryId) == 0) ? false : true
     }
 }
