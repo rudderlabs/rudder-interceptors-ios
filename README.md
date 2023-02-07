@@ -29,7 +29,7 @@ The [RudderStack iOS SDK](https://www.rudderstack.com/docs/sources/event-streams
 
 ### Objective C
 
-1. Create a `CustomConsentInterceptor.h` file by extending `RSConsentInterceptor`, as shown:
+1. Create a `CustomConsentFilter.h` file by extending `RSConsentFilter`, as shown:
 
 ```objectivec
 #import <Foundation/Foundation.h>
@@ -37,24 +37,24 @@ The [RudderStack iOS SDK](https://www.rudderstack.com/docs/sources/event-streams
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CustomConsentInterceptor : NSObject<RSConsentInterceptor>
+@interface CustomConsentFilter : NSObject<RSConsentFilter>
 
 @end
 
 NS_ASSUME_NONNULL_END
 ```
 
-2. Create a `CustomConsentInterceptor.m` file, as shown:
+2. Create a `CustomConsentFilter.m` file, as shown:
 
 ```objectivec
-#import "CustomConsentInterceptor.h"
+#import "CustomConsentFilter.h"
 
-@implementation CustomConsentInterceptor
+@implementation CustomConsentFilter
 
-- (nonnull RSMessage *)interceptWithServerConfig:(nonnull RSServerConfigSource *)serverConfig andMessage:(nonnull RSMessage *)message {
-    RSMessage *updatedMessage = message;
+- (NSDictionary <NSString *, NSNumber *> * __nullable)filterConsentedDestinations:(NSArray <RSServerDestination *> *)destinations {
+    NSDictionary <NSString *, NSNumber *> *filteredConsentedDestinations;
     // Do someting
-    return updatedMessage;
+    return filteredConsentedDestinations;
 }
 
 @end
@@ -62,29 +62,27 @@ NS_ASSUME_NONNULL_END
 
 ### Swift
 
-1. Create a `CustomConsentInterceptor` file by extending `RSConsentInterceptor`, as shown:
+1. Create a `CustomConsentFilter` file by extending `RSConsentFilter`, as shown:
 
 ```swift
 @objc
-open class OneTrustInterceptor: NSObject, RSConsentInterceptor {
+open class OneTrustInterceptor: NSObject, RSConsentFilter {
     @objc
     public override init() {
         super.init()
     }
 
-    public func intercept(
-        withServerConfig serverConfig: RSServerConfigSource, andMessage message: RSMessage
-    ) -> RSMessage {
-        let updatedMessage = message
+    public func filterConsentedDestinations(_ destinations: [RSServerDestination]) -> [String: NSNumber]? {
+        let filteredConsentedDestinations: [String: NSNumber]
         // Do something
-        return updatedMessage
+        return filteredConsentedDestinations
     }
 }
 ```
 
 ## Registering interceptor with iOS SDK
 
-You can register `CustomConsentInterceptor` with the iOS SDK during the initialization, as shown:
+You can register `CustomConsentFilter` with the iOS SDK during the initialization, as shown:
 
 ### Objective C
 
@@ -92,7 +90,7 @@ You can register `CustomConsentInterceptor` with the iOS SDK during the initiali
 RSConfigBuilder *builder = [[RSConfigBuilder alloc] init];
 [builder withLoglevel:RSLogLevelDebug];
 [builder withDataPlaneUrl:DATA_PLANE_URL];
-[builder withConsentInterceptor:[[CustomConsentInterceptor alloc] init]];
+[builder withConsentFilter:[[CustomConsentFilter alloc] init]];
 
 [RSClient getInstance:WRITE_KEY config:builder.build];
 ```
@@ -103,17 +101,17 @@ RSConfigBuilder *builder = [[RSConfigBuilder alloc] init];
 let builder: RSConfigBuilder = RSConfigBuilder()
     .withLoglevel(RSLogLevelDebug)
     .withDataPlaneUrl(DATA_PLANE_URL)
-    .withConsentInterceptor(CustomConsentInterceptor())
+    .withConsentFilter(CustomConsentFilter())
 
 RSClient.getInstance(rudderConfig.WRITE_KEY, config: builder.build())
 ```
 
 ## Installing OneTrust consent
 
-1. Install `RudderOneTrust` by adding the following line to your `Podfile`:
+1. Install `RudderOneTrustConsentFilter` by adding the following line to your `Podfile`:
 
 ```ruby
-pod 'RudderOneTrust', '~> 1.0.0'
+pod 'RudderOneTrustConsentFilter', '~> 1.0.0'
 ```
 
 2. Import the SDK, as shown:
@@ -121,13 +119,13 @@ pod 'RudderOneTrust', '~> 1.0.0'
 #### Objective C
 
 ```objectivec
-@import RudderOneTrust;
+@import RudderOneTrustConsentFilter;
 ```
 
 #### Swift
 
 ```swift
-import RudderOneTrust
+import RudderOneTrustConsentFilter
 ```
 
 3. Finally, add the imports to your `AppDelegate` file under the `didFinishLaunchingWithOptions` method:
@@ -140,7 +138,7 @@ import RudderOneTrust
         RSConfigBuilder *builder = [[RSConfigBuilder alloc] init];
         [builder withLoglevel:RSLogLevelDebug];
         [builder withDataPlaneUrl:DATA_PLANE_URL];
-        [builder withConsentInterceptor:[[OneTrustInterceptor alloc] init]];
+        [builder withConsentFilter:[[RudderOneTrustConsentFilter alloc] init]];
 
         [RSClient getInstance:rudderConfig.WRITE_KEY config:builder.build];
     }
@@ -159,7 +157,7 @@ OTPublishersHeadlessSDK.shared.startSDK(
         let builder: RSConfigBuilder = RSConfigBuilder()
             .withLoglevel(RSLogLevelDebug)
             .withDataPlaneUrl(DATA_PLANE_URL)
-            .withConsentInterceptor(OneTrustInterceptor())
+            .withConsentFilter(RudderOneTrustConsentFilter())
 
         RSClient.getInstance(rudderConfig.WRITE_KEY, config: builder.build())
     }

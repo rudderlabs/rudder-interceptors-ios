@@ -42,12 +42,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     .withFactory(RudderFacebookFactory.instance())
                     .withFactory(RudderFirebaseFactory.instance())
                     .withFactory(RudderAppsflyerFactory.instance())
+                    .withConsentFilter(RudderOneTrustConsentFilter())
                 
                 let option = RSOption()
                 option.putIntegration("Firebase", isEnabled: true)
                 option.putIntegration("Braze", isEnabled: true)
                 option.putIntegration("AppsFlyer", isEnabled: false)
-                RSClient.getInstance(rudderConfig.WRITE_KEY, config: builder.build(), options: option, consentFilter: RudderOneTrustConsentFilter())
+                RSClient.getInstance(rudderConfig.WRITE_KEY, config: builder.build(), options: option)
             }
         }
         return true
