@@ -40,18 +40,19 @@ open class RudderOneTrustConsentFilter: NSObject, RSConsentFilter {
         
         var integrations = [String: NSNumber]()
         for destination in destinations {
-            let integration = getIntegration(from: destination, with: oneTrustCategoryList)
-            integrations.merge(integration) { (_, new) in new }
+            if let integration = getIntegration(from: destination, with: oneTrustCategoryList) {
+                integrations.merge(integration) { (_, new) in new }
+            }
         }
         return !integrations.isEmpty ? integrations : nil
     }
 }
 
 extension RudderOneTrustConsentFilter {
-    func getIntegration(from destination: RSServerDestination, with oneTrustCategoryList: [OneTrustCategory]) -> [String: NSNumber] {
+    func getIntegration(from destination: RSServerDestination, with oneTrustCategoryList: [OneTrustCategory]) -> [String: NSNumber]? {
         guard let rudderOneTrustCategoryList = getRudderOneTrustCategoryList(destination: destination), !rudderOneTrustCategoryList.isEmpty else {
             RSLogger.logDebug("OneTrustInterceptorModel: no OneTrustCookieCategories found from Config BE for \(destination.destinationName)")
-            return [destination.destinationDefinition.displayName: NSNumber(booleanLiteral: true)]
+            return nil
         }
         var isEnabled = false
         var integration = [String: NSNumber]()
