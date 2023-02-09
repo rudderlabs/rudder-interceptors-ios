@@ -26,8 +26,8 @@ Pod::Spec.new do |s|
   s.ios.source_files = 'RudderOneTrust/Sources/iOS/**/*.swift'
   s.tvos.source_files = 'RudderOneTrust/Sources/tvOS/**/*.swift'
 
-  s.ios.dependency 'OneTrust-CMP-XCFramework', '202212.1.0'
-  s.tvos.dependency 'OneTrust-CMP-tvOS-XCFramework', '202212.1.0'
+  s.ios.dependency 'OneTrust-CMP-XCFramework', '202301.1.0'
+  s.tvos.dependency 'OneTrust-CMP-tvOS-XCFramework', '202301.1.0'
   
-  s.dependency 'Rudder', '~> 1.9'
+  s.dependency 'Rudder', '~> 1.10'
 end

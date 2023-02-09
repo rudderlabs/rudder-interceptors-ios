@@ -1,6 +1,6 @@
 //
 //  OTiOSModel.swift
-//  OneTrust-iOS
+//  RudderOneTrust
 //
 //  Created by Pallab Maiti on 20/01/23.
 //

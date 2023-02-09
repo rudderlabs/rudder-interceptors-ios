@@ -1,6 +1,6 @@
 //
 //  OneTrustCookieCategory.swift
-//  OneTrust
+//  RudderOneTrust
 //
 //  Created by Pallab Maiti on 20/01/23.
 //

@@ -1,6 +1,6 @@
 //
 //  OTtvOSModel.swift
-//  OneTrust-tvOS
+//  RudderOneTrust
 //
 //  Created by Pallab Maiti on 20/01/23.
 //

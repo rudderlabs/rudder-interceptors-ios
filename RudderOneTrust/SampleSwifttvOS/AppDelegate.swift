@@ -34,12 +34,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     .withLoglevel(RSLogLevelDebug)
                     .withDataPlaneUrl(rudderConfig.DEV_DATA_PLANE_URL)
                     .withControlPlaneUrl(rudderConfig.DEV_CONTROL_PLANE_URL)
+                    .withConsentFilter(RudderOneTrustConsentFilter())
                 
                 let option = RSOption()
                 option.putIntegration("Firebase", isEnabled: true)
                 option.putIntegration("Adroll", isEnabled: true)
                 option.putIntegration("All", isEnabled: true)
-                RSClient.getInstance(rudderConfig.WRITE_KEY, config: builder.build(), options: option, consentFilter: RudderOneTrustConsentFilter())
+                RSClient.getInstance(rudderConfig.WRITE_KEY, config: builder.build(), options: option)
             }
         }
         return true

@@ -4,13 +4,13 @@ use_frameworks!
 inhibit_all_warnings!
 
 def shared_pods
-    pod 'Rudder', :path => '/Users/pallabmaiti/Documents/Rudder/rudder-sdk-ios-v1/'
+    pod 'Rudder'
 end
 
 target 'RudderOneTrustiOS' do
     platform :ios, '11.0'
     shared_pods
-    pod 'OneTrust-CMP-XCFramework', '202212.1.0'
+    pod 'OneTrust-CMP-XCFramework', '202301.1.0'
     target 'RudderOneTrustiOSTests' do
         inherit! :complete
     end
@@ -18,7 +18,7 @@ end
 
 target 'RudderOneTrusttvOS' do
     platform :tvos, '11.0'
-    pod 'OneTrust-CMP-tvOS-XCFramework', '202212.1.0'
+    pod 'OneTrust-CMP-tvOS-XCFramework', '202301.1.0'
     shared_pods
     target 'RudderOneTrusttvOSTests' do
         inherit! :complete

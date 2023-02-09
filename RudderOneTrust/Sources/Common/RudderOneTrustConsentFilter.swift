@@ -1,6 +1,6 @@
 //
-//  RudderOneTrustFilter.swift
-//  OneTrust
+//  RudderOneTrustConsentFilter.swift
+//  RudderOneTrust
 //
 //  Created by Pallab Maiti on 17/01/23.
 //
