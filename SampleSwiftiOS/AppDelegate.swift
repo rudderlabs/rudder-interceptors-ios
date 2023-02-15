@@ -18,6 +18,8 @@ import Rudder_Appsflyer
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
+    var rudderConfig: RudderConfig?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         guard let path = Bundle.main.path(forResource: "RudderConfig", ofType: "plist"),
@@ -26,31 +28,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return true
         }
         
-        // It is recommended to initialise Rudder SDK after successful initialisation of OTPublishersHeadlessSDK
+        self.rudderConfig = rudderConfig
+        // It is recommended to load the Rudder SDK only if the user provides their consent
         OTPublishersHeadlessSDK.shared.startSDK(
             storageLocation: rudderConfig.STORAGE_LOCATION,
             domainIdentifier: rudderConfig.DOMAIN_IDENTIFIER,
             languageCode: "en"
         ) { response in
             if response.status {
-                let builder: RSConfigBuilder = RSConfigBuilder()
-                    .withLoglevel(RSLogLevelDebug)
-                    .withDataPlaneUrl(rudderConfig.LOCAL_DATA_PLANE_URL)
-                    .withControlPlaneUrl(rudderConfig.DEV_CONTROL_PLANE_URL)
-                    .withFactory(RudderBrazeFactory.instance())
-                    .withFactory(RudderAdjustFactory.instance())
-                    .withFactory(RudderFacebookFactory.instance())
-                    .withFactory(RudderFirebaseFactory.instance())
-                    .withFactory(RudderAppsflyerFactory.instance())
-                    .withConsentFilter(RudderOneTrustConsentFilter())
-                
-                let option = RSOption()
-                option.putIntegration("Firebase", isEnabled: true)
-                option.putIntegration("Braze", isEnabled: true)
-                option.putIntegration("AppsFlyer", isEnabled: false)
-                RSClient.getInstance(rudderConfig.WRITE_KEY, config: builder.build(), options: option)
+                if let OT_INITIALISED = UserDefaults.standard.value(forKey: "OT_INITIALISED") as? Bool, OT_INITIALISED == true {
+                    self.initializeRudderSDK()
+                }
             }
         }
+        
+        OTPublishersHeadlessSDK.shared.addEventListener(self)
         return true
     }
     
@@ -67,5 +59,97 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
+    
+    func initializeRudderSDK() {
+        guard let rudderConfig = rudderConfig else {
+            return
+        }
+        UserDefaults.standard.set(true, forKey: "OT_INITIALISED")
+        let builder: RSConfigBuilder = RSConfigBuilder()
+            .withLoglevel(RSLogLevelDebug)
+            .withDataPlaneUrl(rudderConfig.LOCAL_DATA_PLANE_URL)
+            .withControlPlaneUrl(rudderConfig.DEV_CONTROL_PLANE_URL)
+            .withFactory(RudderBrazeFactory.instance())
+            .withFactory(RudderAdjustFactory.instance())
+            .withFactory(RudderFacebookFactory.instance())
+            .withFactory(RudderFirebaseFactory.instance())
+            .withFactory(RudderAppsflyerFactory.instance())
+            .withConsentFilter(RudderOneTrustConsentFilter())
+        
+        let option = RSOption()
+        option.putIntegration("Firebase", isEnabled: true)
+        option.putIntegration("Braze", isEnabled: true)
+        option.putIntegration("AppsFlyer", isEnabled: false)
+        RSClient.getInstance(rudderConfig.WRITE_KEY, config: builder.build(), options: option)
+    }
 }
 
+extension AppDelegate: OTEventListener {
+    func onHideBanner() {
+        
+    }
+    
+    func onShowBanner() {
+        
+    }
+    
+    func onBannerClickedRejectAll() {
+        initializeRudderSDK()
+    }
+    
+    func onBannerClickedAcceptAll() {
+        initializeRudderSDK()
+    }
+    
+    func onShowPreferenceCenter() {
+        
+    }
+    
+    func onHidePreferenceCenter() {
+        initializeRudderSDK()
+    }
+    
+    func onPreferenceCenterRejectAll() {
+        initializeRudderSDK()
+    }
+    
+    func onPreferenceCenterAcceptAll() {
+        initializeRudderSDK()
+    }
+    
+    func onPreferenceCenterConfirmChoices() {
+        initializeRudderSDK()
+    }
+    
+    func onPreferenceCenterPurposeLegitimateInterestChanged(purposeId: String, legitInterest: Int8) {
+        
+    }
+    
+    func onPreferenceCenterPurposeConsentChanged(purposeId: String, consentStatus: Int8) {
+        
+    }
+    
+    func onShowVendorList() {
+        
+    }
+    
+    func onHideVendorList() {
+        
+    }
+    
+    func onVendorListVendorConsentChanged(vendorId: String, consentStatus: Int8) {
+        
+    }
+    
+    func onVendorListVendorLegitimateInterestChanged(vendorId: String, legitInterest: Int8) {
+        
+    }
+    
+    func onVendorConfirmChoices() {
+        
+    }
+    
+    func allSDKViewsDismissed(interactionType: ConsentInteractionType) {
+        
+    }
+}

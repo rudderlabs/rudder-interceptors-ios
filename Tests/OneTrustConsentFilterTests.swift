@@ -36,6 +36,23 @@ final class OneTrustConsentFilterTests: XCTestCase {
         XCTAssertEqual(oneTrustSDK.getConsentStatus(forCategoryId: "CAT04"), true)
     }
     
+    func test_getConsentCategoriesDict() {
+        // Given
+        let expected = [
+            "CAT01": NSNumber(booleanLiteral: true),
+            "CAT02": NSNumber(booleanLiteral: false),
+            "CAT03": NSNumber(booleanLiteral: true),
+            "CAT04": NSNumber(booleanLiteral: true)
+        ]
+        
+        // When
+        let oneTrustConsentFilter = RudderOneTrustConsentFilter(oneTrustSDK: oneTrustSDK)
+        let consentCategoriesDict = oneTrustConsentFilter.getConsentCategoriesDict()
+        
+        // Then
+        XCTAssertEqual(consentCategoriesDict, expected)
+    }
+    
     func test_getIntegration() {
         // Given
         let expected = NSNumber(booleanLiteral: false)

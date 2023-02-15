@@ -46,6 +46,18 @@ open class RudderOneTrustConsentFilter: NSObject, RSConsentFilter {
         }
         return !integrations.isEmpty ? integrations : nil
     }
+    
+    public func getConsentCategoriesDict() -> [String : NSNumber]? {
+        guard let oneTrustCategoryList = oneTrustSDK.fetchCategoryList(), !oneTrustCategoryList.isEmpty else {
+            RSLogger.logDebug("OneTrustInterceptorModel: no OneTrustCookieCategories found from OneTrust SDK")
+            return nil
+        }
+        var consentCategoriesDict = [String: NSNumber]()
+        for list in oneTrustCategoryList {
+            consentCategoriesDict[list.customGroupId] = NSNumber(booleanLiteral: oneTrustSDK.getConsentStatus(forCategoryId: list.customGroupId))
+        }
+        return consentCategoriesDict.isEmpty ? nil : consentCategoriesDict
+    }
 }
 
 extension RudderOneTrustConsentFilter {

@@ -17,6 +17,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       
+      - name: Cocoapods cache
+        uses: actions/cache@v3
+        id: cocoapods-cache
+        with:
+          path: Pods
+          key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-pods-
+      
       - name: Install sonar-scanner and build-wrapper
         uses: SonarSource/sonarcloud-github-c-cpp@v1
         
@@ -27,7 +36,8 @@ jobs:
         run: gem install cocoapods
         
       - name: Pod Install
-        run: pod install
+        if: steps.cocoapods-cache.outputs.cache-hit != 'true'
+        run: pod install --repo-update
 
       - name: Run build-wrapper
         run: |
