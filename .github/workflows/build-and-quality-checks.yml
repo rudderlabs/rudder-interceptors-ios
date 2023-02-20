@@ -18,11 +18,11 @@ jobs:
 
       - name: Build SDK(iOS)
         run: |
-          xcodebuild build -scheme RudderOneTrust-Cccoa -workspace RudderOneTrust.xcworkspace -destination 'platform=iOS Simulator,name=iPhone 13' | xcpretty
+          xcodebuild build -scheme RudderOneTrust-Cocoa -workspace RudderOneTrust.xcworkspace -destination 'platform=iOS Simulator,name=iPhone 13' | xcpretty
 
       - name: Build SDK(tvOS)
         run: |
-          xcodebuild build -scheme RudderOneTrust-Cccoa -workspace RudderOneTrust.xcworkspace -destination 'platform=tvOS Simulator,name=Apple TV' | xcpretty
+          xcodebuild build -scheme RudderOneTrust-Cocoa -workspace RudderOneTrust.xcworkspace -destination 'platform=tvOS Simulator,name=Apple TV' | xcpretty
 
       - name: Install Cocoapods
         run: gem install cocoapods

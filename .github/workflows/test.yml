@@ -25,11 +25,11 @@ jobs:
 
       - name: Run build-wrapper
         run: |
-          build-wrapper-macosx-x86 --out-dir ${{ env.BUILD_WRAPPER_OUT_DIR }} xcodebuild -workspace RudderOneTrust.xcworkspace -scheme RudderOneTrust-Cccoa -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 13' | xcpretty
+          build-wrapper-macosx-x86 --out-dir ${{ env.BUILD_WRAPPER_OUT_DIR }} xcodebuild -workspace RudderOneTrust.xcworkspace -scheme RudderOneTrust-Cocoa -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 13' | xcpretty
           
       - name: Run tests(suite)
         run: |
-          xcodebuild -workspace RudderOneTrust.xcworkspace -scheme RudderOneTrust-Cccoa test -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 13' -enableCodeCoverage YES -derivedDataPath build | xcpretty
+          xcodebuild -workspace RudderOneTrust.xcworkspace -scheme RudderOneTrust-Cocoa test -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 13' -enableCodeCoverage YES -derivedDataPath build | xcpretty
       - name: Collect coverage into one XML report
         run: |
           bash xccov-to-generic.sh build/Logs/Test/*.xcresult/ > generic-coverage.xml
