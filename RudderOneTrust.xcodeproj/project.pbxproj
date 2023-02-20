@@ -68,6 +68,12 @@
 		ED04A2EE2987C8660080A88D /* RudderConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED04A2342982D5960080A88D /* RudderConfig.swift */; };
 		ED04A2F52988080E0080A88D /* RudderConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED04A2342982D5960080A88D /* RudderConfig.swift */; };
 		ED7DFD7F298BF88900ED5A8E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED7DFD7E298BF88900ED5A8E /* GoogleService-Info.plist */; };
+		EDB7B00229A3542B00BD6F94 /* RudderOneTrustiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = ED049F38297FE9460080A88D /* RudderOneTrustiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDB7B00429A3542B00BD6F94 /* DestinationConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED04A208298180E60080A88D /* DestinationConfig.swift */; };
+		EDB7B00529A3542B00BD6F94 /* iOSSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED049F6B298013FE0080A88D /* iOSSDK.swift */; };
+		EDB7B00629A3542B00BD6F94 /* RudderOneTrustConsentFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED049F6F298013FE0080A88D /* RudderOneTrustConsentFilter.swift */; };
+		EDB7B00729A3542B00BD6F94 /* OneTrustCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED049F70298013FE0080A88D /* OneTrustCategory.swift */; };
+		EDB7B00929A3542B00BD6F94 /* Pods_RudderOneTrustiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4189B36AA5A5EB9D0C37CF /* Pods_RudderOneTrustiOS.framework */; };
 		F13FE1448C8052042FBFB6BF /* Pods_RudderOneTrusttvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E7BB5EF0C7175C086217EA /* Pods_RudderOneTrusttvOS.framework */; };
 		FCF075C2887D84CE6D570255 /* Pods_SampleObjCiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D587F51E13A15EE301407FF /* Pods_SampleObjCiOS.framework */; };
 /* End PBXBuildFile section */
@@ -191,6 +197,7 @@
 		ED7DFD7C298B936900ED5A8E /* xccov-to-generic.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "xccov-to-generic.sh"; sourceTree = "<group>"; };
 		ED7DFD7D298B936900ED5A8E /* CODE_OF_CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CODE_OF_CONDUCT.md; sourceTree = "<group>"; };
 		ED7DFD7E298BF88900ED5A8E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EDB7B00E29A3542B00BD6F94 /* RudderOneTrust-Cocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "RudderOneTrust-Cocoa.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFDFAB9507BE701BA83AA785 /* Pods_RudderOneTrustiOS_RudderOneTrustiOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RudderOneTrustiOS_RudderOneTrustiOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -258,6 +265,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DF3B308CD57CA9EDCAA7572 /* Pods_SampleObjCtvOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDB7B00829A3542B00BD6F94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDB7B00929A3542B00BD6F94 /* Pods_RudderOneTrustiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +347,7 @@
 				ED04A1E7298022B50080A88D /* SampleSwifttvOS.app */,
 				ED04A2B62987C24B0080A88D /* SampleObjCiOS.app */,
 				ED04A2D32987C25B0080A88D /* SampleObjCtvOS.app */,
+				EDB7B00E29A3542B00BD6F94 /* RudderOneTrust-Cocoa.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -551,6 +567,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EDB7B00129A3542B00BD6F94 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDB7B00229A3542B00BD6F94 /* RudderOneTrustiOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -708,6 +732,25 @@
 			productReference = ED04A2D32987C25B0080A88D /* SampleObjCtvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
+		EDB7AFFF29A3542B00BD6F94 /* RudderOneTrust-Cocoa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDB7B00B29A3542B00BD6F94 /* Build configuration list for PBXNativeTarget "RudderOneTrust-Cocoa" */;
+			buildPhases = (
+				EDB7B00029A3542B00BD6F94 /* [CP] Check Pods Manifest.lock */,
+				EDB7B00129A3542B00BD6F94 /* Headers */,
+				EDB7B00329A3542B00BD6F94 /* Sources */,
+				EDB7B00829A3542B00BD6F94 /* Frameworks */,
+				EDB7B00A29A3542B00BD6F94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RudderOneTrust-Cocoa";
+			productName = RudderOneTrustiOS;
+			productReference = EDB7B00E29A3542B00BD6F94 /* RudderOneTrust-Cocoa.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -767,6 +810,7 @@
 				ED04A1E6298022B50080A88D /* SampleSwifttvOS */,
 				ED04A2B52987C24B0080A88D /* SampleObjCiOS */,
 				ED04A2D22987C25B0080A88D /* SampleObjCtvOS */,
+				EDB7AFFF29A3542B00BD6F94 /* RudderOneTrust-Cocoa */,
 			);
 		};
 /* End PBXProject section */
@@ -846,6 +890,13 @@
 				ED04A2E22987C25C0080A88D /* LaunchScreen.storyboard in Resources */,
 				ED04A2DF2987C25C0080A88D /* Assets.xcassets in Resources */,
 				ED04A2DD2987C25B0080A88D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDB7B00A29A3542B00BD6F94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1064,6 +1115,28 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SampleSwifttvOS/Pods-SampleSwifttvOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		EDB7B00029A3542B00BD6F94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RudderOneTrustiOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		EFCFCBB95DE500EB985FA23C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1216,6 +1289,17 @@
 				ED04A2F52988080E0080A88D /* RudderConfig.swift in Sources */,
 				ED04A2E42987C25C0080A88D /* main.m in Sources */,
 				ED04A2D72987C25B0080A88D /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDB7B00329A3542B00BD6F94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDB7B00429A3542B00BD6F94 /* DestinationConfig.swift in Sources */,
+				EDB7B00529A3542B00BD6F94 /* iOSSDK.swift in Sources */,
+				EDB7B00629A3542B00BD6F94 /* RudderOneTrustConsentFilter.swift in Sources */,
+				EDB7B00729A3542B00BD6F94 /* OneTrustCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1846,6 +1930,70 @@
 			};
 			name = Release;
 		};
+		EDB7B00C29A3542B00BD6F94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32A705DEF94E65B829BBA570 /* Pods-RudderOneTrustiOS.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rudderstack.RudderOneTrustiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvsimulator appletvos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,3";
+			};
+			name = Debug;
+		};
+		EDB7B00D29A3542B00BD6F94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1765CADAFEBA9665A4080C30 /* Pods-RudderOneTrustiOS.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rudderstack.RudderOneTrustiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvsimulator appletvos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,3";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1926,6 +2074,15 @@
 			buildConfigurations = (
 				ED04A2E62987C25C0080A88D /* Debug */,
 				ED04A2E72987C25C0080A88D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDB7B00B29A3542B00BD6F94 /* Build configuration list for PBXNativeTarget "RudderOneTrust-Cocoa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDB7B00C29A3542B00BD6F94 /* Debug */,
+				EDB7B00D29A3542B00BD6F94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
