@@ -22,9 +22,9 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '11.0'
   
   
-  s.source_files = 'RudderOneTrust/Sources/Common/**/*.swift'
-  s.ios.source_files = 'RudderOneTrust/Sources/iOS/**/*.swift'
-  s.tvos.source_files = 'RudderOneTrust/Sources/tvOS/**/*.swift'
+  s.source_files = 'Sources/Common/**/*.swift'
+  s.ios.source_files = 'Sources/iOS/**/*.swift'
+  s.tvos.source_files = 'Sources/tvOS/**/*.swift'
 
   s.ios.dependency 'OneTrust-CMP-XCFramework', '202301.1.0'
   s.tvos.dependency 'OneTrust-CMP-tvOS-XCFramework', '202301.1.0'
