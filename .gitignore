@@ -95,3 +95,9 @@ iOSInjectionProject/
 # Config file
 RudderConfig.plist
 GoogleService-Info.plist
+
+# Sonar
+relative_or_absolute_path_to_cache_location
+compile_commands.json
+.scannerwork
+generic-coverage.xml
