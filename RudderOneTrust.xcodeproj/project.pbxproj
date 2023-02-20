@@ -124,7 +124,7 @@
 		ED04A1A4298014EA0080A88D /* OneTrustConsentFilterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneTrustConsentFilterTests.swift; sourceTree = "<group>"; };
 		ED04A1AD298015AC0080A88D /* RudderOneTrustiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RudderOneTrustiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED04A1BD298015CC0080A88D /* RudderOneTrusttvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RudderOneTrusttvOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED04A1C9298016840080A88D /* RudderOneTrustConsentFilter.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = RudderOneTrustConsentFilter.podspec; path = ../RudderOneTrustConsentFilter.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		ED04A1C9298016840080A88D /* RudderOneTrustConsentFilter.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = RudderOneTrustConsentFilter.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		ED04A1CA298016840080A88D /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		ED04A1CF298022720080A88D /* SampleSwiftiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleSwiftiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED04A1D1298022720080A88D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -182,14 +182,14 @@
 		ED7DFD73298B936800ED5A8E /* draft-new-release.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "draft-new-release.yml"; sourceTree = "<group>"; };
 		ED7DFD74298B936800ED5A8E /* pull_request_template.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = pull_request_template.md; sourceTree = "<group>"; };
 		ED7DFD75298B936800ED5A8E /* dependabot.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = dependabot.yml; sourceTree = "<group>"; };
-		ED7DFD76298B936800ED5A8E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		ED7DFD77298B936800ED5A8E /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		ED7DFD78298B936900ED5A8E /* CODEOWNERS */ = {isa = PBXFileReference; lastKnownFileType = text; name = CODEOWNERS; path = ../CODEOWNERS; sourceTree = "<group>"; };
-		ED7DFD79298B936900ED5A8E /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = CONTRIBUTING.md; path = ../CONTRIBUTING.md; sourceTree = "<group>"; };
-		ED7DFD7A298B936900ED5A8E /* package.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = package.json; path = ../package.json; sourceTree = "<group>"; };
-		ED7DFD7B298B936900ED5A8E /* sonar-project.properties */ = {isa = PBXFileReference; lastKnownFileType = text; name = "sonar-project.properties"; path = "../sonar-project.properties"; sourceTree = "<group>"; };
-		ED7DFD7C298B936900ED5A8E /* xccov-to-generic.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = "xccov-to-generic.sh"; path = "../xccov-to-generic.sh"; sourceTree = "<group>"; };
-		ED7DFD7D298B936900ED5A8E /* CODE_OF_CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = CODE_OF_CONDUCT.md; path = ../CODE_OF_CONDUCT.md; sourceTree = "<group>"; };
+		ED7DFD76298B936800ED5A8E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		ED7DFD77298B936800ED5A8E /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		ED7DFD78298B936900ED5A8E /* CODEOWNERS */ = {isa = PBXFileReference; lastKnownFileType = text; path = CODEOWNERS; sourceTree = "<group>"; };
+		ED7DFD79298B936900ED5A8E /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
+		ED7DFD7A298B936900ED5A8E /* package.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = package.json; sourceTree = "<group>"; };
+		ED7DFD7B298B936900ED5A8E /* sonar-project.properties */ = {isa = PBXFileReference; lastKnownFileType = text; path = "sonar-project.properties"; sourceTree = "<group>"; };
+		ED7DFD7C298B936900ED5A8E /* xccov-to-generic.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "xccov-to-generic.sh"; sourceTree = "<group>"; };
+		ED7DFD7D298B936900ED5A8E /* CODE_OF_CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CODE_OF_CONDUCT.md; sourceTree = "<group>"; };
 		ED7DFD7E298BF88900ED5A8E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EFDFAB9507BE701BA83AA785 /* Pods_RudderOneTrustiOS_RudderOneTrustiOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RudderOneTrustiOS_RudderOneTrustiOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -514,8 +514,7 @@
 				ED7DFD74298B936800ED5A8E /* pull_request_template.md */,
 				ED7DFD75298B936800ED5A8E /* dependabot.yml */,
 			);
-			name = .github;
-			path = ../.github;
+			path = .github;
 			sourceTree = "<group>";
 		};
 		ED7DFD6B298B936800ED5A8E /* workflows */ = {
