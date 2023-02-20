@@ -15,6 +15,12 @@ jobs:
       
       - name: Install xcpretty
         run: gem install xcpretty
+        
+      - name: Install Cocoapods
+        run: gem install cocoapods
+        
+      - name: Pod Install
+        run: pod install
 
       - name: Build SDK(iOS)
         run: |
@@ -24,8 +30,5 @@ jobs:
         run: |
           xcodebuild build -scheme RudderOneTrust-Cocoa -workspace RudderOneTrust.xcworkspace -destination 'platform=tvOS Simulator,name=Apple TV' | xcpretty
 
-      - name: Install Cocoapods
-        run: gem install cocoapods
-      
       - name: Execute pod lint
         run: pod lib lint --no-clean --allow-warnings
