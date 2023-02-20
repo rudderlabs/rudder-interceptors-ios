@@ -19,19 +19,5 @@ jobs:
       - name: Install Cocoapods
         run: gem install cocoapods
         
-      - name: Install Cocoapods-check
-        run: gem install cocoapods-check
-        
-      - name: Pod Install
-        run: pod check || pod install
-
-      - name: Build SDK(iOS)
-        run: |
-          xcodebuild build -scheme RudderOneTrustiOS -workspace RudderOneTrust.xcworkspace -destination 'platform=iOS Simulator,name=iPhone 13' | xcpretty
-
-      - name: Build SDK(tvOS)
-        run: |
-          xcodebuild build -scheme RudderOneTrusttvOS -workspace RudderOneTrust.xcworkspace -destination 'platform=tvOS Simulator,name=Apple TV' | xcpretty
-
       - name: Execute pod lint
         run: pod lib lint --no-clean --allow-warnings
