@@ -137,7 +137,7 @@ DEPENDENCIES:
   - Rudder-Braze
   - Rudder-Facebook
   - Rudder-Firebase
-  - RudderOneTrustConsentFilter (from `../`)
+  - RudderOneTrustConsentFilter (from `.`)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -169,7 +169,7 @@ EXTERNAL SOURCES:
     :commit: 7590be8a0ed5110659faaf4514111bd7cdce909e
     :git: https://github.com/rudderlabs/rudder-integration-appsflyer-ios.git
   RudderOneTrustConsentFilter:
-    :path: "../"
+    :path: "."
 
 CHECKOUT OPTIONS:
   Rudder-Appsflyer:
@@ -202,6 +202,6 @@ SPEC CHECKSUMS:
   RudderOneTrustConsentFilter: 61929a8fc74f3c4197af2cadcf34456205e7aa59
   SDWebImage: 9bec4c5cdd9579e1f57104735ee0c37df274d593
 
-PODFILE CHECKSUM: b05bb95b47e8c51109bcf97e671c2c9004da60ea
+PODFILE CHECKSUM: 85742de4261c5073c6907213e9f4a4fe17414bcd
 
 COCOAPODS: 1.11.3
