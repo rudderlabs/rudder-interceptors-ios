@@ -111,7 +111,7 @@ RSClient.getInstance(rudderConfig.WRITE_KEY, config: builder.build())
 1. Install `RudderOneTrustConsentFilter` by adding the following line to your `Podfile`:
 
 ```ruby
-pod 'RudderOneTrustConsentFilter', '~> 1.0.0'
+pod 'RudderOneTrustConsentFilter', '~> 1.1.0'
 ```
 
 2. Import the SDK, as shown:
@@ -133,27 +133,53 @@ import RudderOneTrustConsentFilter
 #### Objective C
 
 ```objectivec
-[[OTPublishersHeadlessSDK shared] startSDKWithStorageLocation:STORAGE_LOCATION domainIdentifier:DOMAIN_IDENTIFIER languageCode:@"en" params:nil loadOffline:NO completionHandler:^(OTResponse *response) {
-    if (response.status) {
-        RSConfigBuilder *builder = [[RSConfigBuilder alloc] init];
-        [builder withLoglevel:RSLogLevelDebug];
-        [builder withDataPlaneUrl:DATA_PLANE_URL];
-        [builder withConsentFilter:[[RudderOneTrustConsentFilter alloc] init]];
+@interface AppDelegate ()<OTEventListener>
 
-        [RSClient getInstance:rudderConfig.WRITE_KEY config:builder.build];
-    }
-}];
+@end
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [[OTPublishersHeadlessSDK shared] startSDKWithStorageLocation:STORAGE_LOCATION domainIdentifier:DOMAIN_IDENTIFIER languageCode:@"en" params:nil loadOffline:NO completionHandler:^(OTResponse *response) {
+        if (response.status) {
+        
+        }
+    }];
+    
+    [[OTPublishersHeadlessSDK shared] addEventListener:self];
+}
+
+- (void)initializeRudderSDK {
+    RSConfigBuilder *builder = [[RSConfigBuilder alloc] init];
+    [builder withLoglevel:RSLogLevelDebug];
+    [builder withDataPlaneUrl:DATA_PLANE_URL];
+    [builder withConsentFilter:[[RudderOneTrustConsentFilter alloc] init]];
+
+    [RSClient getInstance:rudderConfig.WRITE_KEY config:builder.build];
+}
+
+- (void)onPreferenceCenterConfirmChoices {
+    [self initializeRudderSDK];
+}
 ```
 
 #### Swift
 
 ```swift
-OTPublishersHeadlessSDK.shared.startSDK(
-    storageLocation: STORAGE_LOCATION,
-    domainIdentifier: DOMAIN_IDENTIFIER,
-    languageCode: "en"
-) { response in
-    if response.status {
+class AppDelegate {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        OTPublishersHeadlessSDK.shared.startSDK(
+            storageLocation: STORAGE_LOCATION,
+            domainIdentifier: DOMAIN_IDENTIFIER,
+            languageCode: "en"
+        ) { response in
+            if response.status {
+        
+            }
+        }
+        
+        OTPublishersHeadlessSDK.shared.addEventListener(self)
+    }
+    
+    func initializeRudderSDK() {
         let builder: RSConfigBuilder = RSConfigBuilder()
             .withLoglevel(RSLogLevelDebug)
             .withDataPlaneUrl(DATA_PLANE_URL)
@@ -162,9 +188,15 @@ OTPublishersHeadlessSDK.shared.startSDK(
         RSClient.getInstance(rudderConfig.WRITE_KEY, config: builder.build())
     }
 }
+
+extension AppDelegate: OTEventListener {
+    func onPreferenceCenterConfirmChoices() {
+        initializeRudderSDK()
+    }
+}
 ```
 
-| Important: It is recommended to load the SDK only after initializing the OneTrust SDK successfully. |
+| Important: It is recommended to load the SDK only if the user provides their consent. |
 | :----|
 
 ## License

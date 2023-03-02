@@ -12,7 +12,9 @@
 @import RudderOneTrustConsentFilter;
 @import OTPublishersHeadlessSDKtvOS;
 
-@interface AppDelegate ()
+@interface AppDelegate ()<OTEventListener> {
+    RudderConfig *rudderConfig;
+}
 
 @end
 
@@ -25,14 +27,10 @@
         NSURL *url = [NSURL fileURLWithPath:path];
         RudderConfig *rudderConfig = [RudderConfig createFrom:url];
         if (rudderConfig != nil) {
+            self->rudderConfig = rudderConfig;
             [[OTPublishersHeadlessSDK shared] startSDKWithStorageLocation:rudderConfig.STORAGE_LOCATION domainIdentifier:rudderConfig.DOMAIN_IDENTIFIER languageCode:@"en" params:nil loadOffline:NO completionHandler:^(OTResponse *response) {
                 if (response.status) {
-                    RSConfigBuilder *builder = [[RSConfigBuilder alloc] init];
-                    [builder withLoglevel:RSLogLevelDebug];
-                    [builder withDataPlaneUrl:rudderConfig.DEV_DATA_PLANE_URL];
-                    [builder withControlPlaneUrl:rudderConfig.DEV_CONTROL_PLANE_URL];
                     
-                    [RSClient getInstance:rudderConfig.WRITE_KEY config:builder.build options:nil consentFilter:[[RudderOneTrustConsentFilter alloc] init]];
                 }
             }];
         }
@@ -40,6 +38,22 @@
     return YES;
 }
 
+- (void)initializeRudderSDK {
+    if (rudderConfig == nil) {
+        return;
+    }
+    RSConfigBuilder *builder = [[RSConfigBuilder alloc] init];
+    [builder withLoglevel:RSLogLevelDebug];
+    [builder withDataPlaneUrl:rudderConfig.DEV_DATA_PLANE_URL];
+    [builder withControlPlaneUrl:rudderConfig.DEV_CONTROL_PLANE_URL];
+    [builder withConsentFilter:[[RudderOneTrustConsentFilter alloc] init]];
+    
+    [RSClient getInstance:rudderConfig.WRITE_KEY config:builder.build];
+}
+
+- (void)onPreferenceCenterConfirmChoices {
+    [self initializeRudderSDK];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

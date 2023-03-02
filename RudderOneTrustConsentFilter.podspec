@@ -29,5 +29,5 @@ Pod::Spec.new do |s|
   s.ios.dependency 'OneTrust-CMP-XCFramework', '202301.1.0'
   s.tvos.dependency 'OneTrust-CMP-tvOS-XCFramework', '202301.1.0'
   
-  s.dependency 'Rudder', '~> 1.10'
+  s.dependency 'Rudder', '~> 1.12'
 end

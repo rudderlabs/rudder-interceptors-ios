@@ -1,7 +1,7 @@
 PODS:
-  - Adjust (4.33.3):
-    - Adjust/Core (= 4.33.3)
-  - Adjust/Core (4.33.3)
+  - Adjust (4.33.4):
+    - Adjust/Core (= 4.33.4)
+  - Adjust/Core (4.33.4)
   - Appboy-iOS-SDK (4.4.2):
     - Appboy-iOS-SDK/UI (= 4.4.2)
   - Appboy-iOS-SDK/ContentCards (4.4.2):
@@ -104,7 +104,7 @@ PODS:
   - OneTrust-CMP-tvOS-XCFramework (202301.1.0.0)
   - OneTrust-CMP-XCFramework (202301.1.0.0)
   - PromisesObjC (2.1.1)
-  - Rudder (1.10.0)
+  - Rudder (1.12.0)
   - Rudder-Adjust (1.0.0):
     - Adjust
     - Rudder
@@ -123,7 +123,7 @@ PODS:
   - RudderOneTrustConsentFilter (1.0.0):
     - OneTrust-CMP-tvOS-XCFramework (= 202301.1.0)
     - OneTrust-CMP-XCFramework (= 202301.1.0)
-    - Rudder (~> 1.10)
+    - Rudder (~> 1.12)
   - SDWebImage (5.15.0):
     - SDWebImage/Core (= 5.15.0)
   - SDWebImage/Core (5.15.0)
@@ -177,7 +177,7 @@ CHECKOUT OPTIONS:
     :git: https://github.com/rudderlabs/rudder-integration-appsflyer-ios.git
 
 SPEC CHECKSUMS:
-  Adjust: 41d0d5c031409aebe7fb1f5703ff0d3306133439
+  Adjust: 4690e07ea401ee56d4d3f4f5bdad86c94f51903f
   Appboy-iOS-SDK: 4a7dfe908639da81e5e85849355f6066b58b4cc6
   AppsFlyerFramework: 75e2e46970e520c88b0456dc6fae98c51b36163a
   FBAEMKit: c2b2895363b7e57192013d1dc49fdf498b28624c
@@ -193,13 +193,13 @@ SPEC CHECKSUMS:
   OneTrust-CMP-tvOS-XCFramework: 9340b9a3d60ac7725600acd50b3146c4317fd24d
   OneTrust-CMP-XCFramework: 70bb8e5b1f721f37b247d1d0d395937b13f89343
   PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
-  Rudder: 779dce4fdb93f3d102a876e13f5450074a4211e1
+  Rudder: 91e5ac5c13f2094da5440ff13cce4a7337a73c3b
   Rudder-Adjust: 5f14011c8f7237d80a96a10655ac03ebf832bcc4
   Rudder-Appsflyer: 08027c146d8a90e51380617dfc1bb62b0976b34f
   Rudder-Braze: e8b8c76b7e7f0348c79f8cc359e43f4c6cd7ac9b
   Rudder-Facebook: fd19a242659ce79e766895270761fd4dcee542ce
   Rudder-Firebase: 9f061bf3c23900e1a8f32f8b079ae17e04874f17
-  RudderOneTrustConsentFilter: 5a239d97b7432cbabbe564c77a4ed2743833674c
+  RudderOneTrustConsentFilter: ce8fc30d0afa9de502cec1775c7d89031868af83
   SDWebImage: 9bec4c5cdd9579e1f57104735ee0c37df274d593
 
 PODFILE CHECKSUM: 85742de4261c5073c6907213e9f4a4fe17414bcd
