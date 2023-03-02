@@ -10,10 +10,7 @@ import OTPublishersHeadlessSDK
 import Rudder
 import RudderOneTrustConsentFilter
 import Rudder_Braze
-import Rudder_Adjust
-import Rudder_Facebook
 import Rudder_Firebase
-import Rudder_Appsflyer
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -67,20 +64,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UserDefaults.standard.set(true, forKey: "OT_INITIALISED")
         let builder: RSConfigBuilder = RSConfigBuilder()
             .withLoglevel(RSLogLevelDebug)
-            .withDataPlaneUrl(rudderConfig.LOCAL_DATA_PLANE_URL)
-            .withControlPlaneUrl(rudderConfig.DEV_CONTROL_PLANE_URL)
+            .withDataPlaneUrl(rudderConfig.PROD_DATA_PLANE_URL)
+            .withSleepTimeOut(5)
             .withFactory(RudderBrazeFactory.instance())
-            .withFactory(RudderAdjustFactory.instance())
-            .withFactory(RudderFacebookFactory.instance())
             .withFactory(RudderFirebaseFactory.instance())
-            .withFactory(RudderAppsflyerFactory.instance())
             .withConsentFilter(RudderOneTrustConsentFilter())
         
-        let option = RSOption()
-        option.putIntegration("Firebase", isEnabled: true)
-        option.putIntegration("Braze", isEnabled: true)
-        option.putIntegration("AppsFlyer", isEnabled: false)
-        RSClient.getInstance(rudderConfig.WRITE_KEY, config: builder.build(), options: option)
+        RSClient.getInstance(rudderConfig.WRITE_KEY, config: builder.build())
     }
 }
 

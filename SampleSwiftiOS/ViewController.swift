@@ -18,10 +18,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func onTrack(_ sender: UIButton) {
-        let option = RSOption()
-        option.putIntegration("Firebase", isEnabled: false)
-        option.putIntegration("Adjust", isEnabled: true)
-        RSClient.sharedInstance()?.track("Test Track", properties: [:], options: option)
+        RSClient.sharedInstance()?.track("Test OneTrust Track_Braze_Disabled")
     }
 }
 
